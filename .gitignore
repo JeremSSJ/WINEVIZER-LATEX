@@ -1,0 +1,15 @@
+# LaTeX generated files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.pdf
+
+# Garder les assets media malgré l'exclusion des .pdf
+!media/
+!media/*.pdf
