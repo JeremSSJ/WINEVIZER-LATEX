@@ -1,0 +1,512 @@
+# Funnel - Mailing
+
+### Étapes du funnel de conversion:
+
+1) Création du compte (période d'essai gratuite de 1 mois)
+2) Création d’un établissement
+3) Ajout de vins à l’établissement
+a) Moins de 10 vins
+b) Plus de 10 vins
+4) Fin du funnel
+a) Abonnement à un plan payant
+b) Expiration de la période d’essai
+Chaque passage à l’étape suivante déclenche une nouvelle série de 3 mails et stop la
+précédente
+Cette signature est attachée à chaque mail
+
+
+## Funnel 1 - Mail 1 (J+0)
+
+```
+Bonjour {{ contact.PRENOM }},
+Bienvenue parmi nous! Merci de rejoindre Winevizer, la solution qui va
+te permettre de digitaliser et simplifier la gestion de ta carte des vins.
+Nous sommes ravis de t’accompagner pour moderniser ton
+établissement et enrichir l’expérience de tes clients.
+Pour commencer, il te suffit de créer ton établissement sur Winevizer
+(cela ne prend qu'une minute) :
+● 📍 Indique le nom, l’adresse et si tu le souhaites ajoute le logo de
+ton établissement
+● 🍷 Découvre ensuite comment ajouter tes premiers vins.
+● 📱 Et génère rapidement ta carte digitale prête à être utilisée!
+Tu peux suivre notre courte ▶ vidéo tutorielle ▶ qui t’explique pas à
+pas la création de l’établissement.
+🔥 Passe à l’action 🔥 : Crée ton établissement maintenant
+🕖 Ne tarde pas, Winevizer offre 1 mois gratuit et sans engagement
+pour tester la solution!
+```
+
+## Funnel 1 - Mail 2 (J+2)
+
+```
+Bonjour {{ contact.PRENOM }},
+Comment se passe ta prise en main de Winevizer? N’hésite pas à nous
+dire si tu as rencontré la moindre difficulté pour finaliser la création de
+ton établissement.
+```
+#### Ce que tu vas y gagner :
+
+```
+● ⭐ Présentation moderne et professionnelle de ta carte des vins.
+● 🔄 Mise à jour ultra-simple au fil de tes nouvelles références.
+● 🤩 Une image valorisée pour tes clients qui consultent le menu
+sur smartphone ou tablette.
+```
+#### Pour t’aider à avancer encore plus vite :
+
+```
+● Consulte notre FAQ
+● Découvre nos exemples de cartes (digitales et imprimables)
+pour voir ce qui t’attend :
+○ Exemple de carte digitale (smartphone)
+○ Exemple de carte digitale (tablette)
+○ Exemple de carte imprimable (PDF)
+Nous sommes disponibles pour tout accompagnement. Il te suffit de
+nous répondre ou de prendre rendez-vous avec notre équipe.
+🍷 Complète vite ton établissement 🍷 pour pouvoir importer tes vins
+et découvrir tout le potentiel de Winevizer.
+À ton service,
+```
+
+## Funnel 1 - Mail 3 (J+5)
+
+Bonjour {{ contact.PRENOM }},
+As-tu déjà commencé la création de ton établissement dans
+Winevizer? Il ne reste peut-être que quelques champs à renseigner
+pour que tu puisses passer à l’étape suivante : **l’ajout de tes vins** 🍷.
+
+#### Pourquoi c’est important?
+
+● Tu vas pouvoir **tester** la visualisation de ta carte et constater à
+quel point elle est attrayante pour tes clients.
+● Plus vite tu finalises ton établissement, plus vite tu profites de
+notre **période d’essai** pour explorer toutes les fonctionnalités (QR
+code, impressions, recommandations...).
+**Besoin d’un petit coup de pouce?**
+● ⏩ Regarde notre **vidéo pas à pas**
+● ❓ Contacte-nous pour un **mini-coaching gratuit** sur la mise en
+place de ta carte.
+🕒 Ne laisse pas ta carte des vins en attente! **Termine la création de
+ton établissement**
+À bientôt,
+
+
+## Funnel 2 - Mail 1 (J+1)
+
+```
+Bonjour {{ contact.PRENOM }},
+Bravo, tu as terminé la création de ton établissement sur Winevizer! Tu
+es maintenant prêt(e) à ajouter tes premiers vins et découvrir tout le
+potentiel de ta carte digitale.
+```
+#### Pourquoi ajouter tes vins maintenant?
+
+```
+● 🍷 Commence par 2 ou 3 références pour tester l’interface.
+● 📱 Découvre immédiatement à quoi ressemble ta carte sur
+smartphone ou tablette.
+● 👌 Rassure-toi, c’est simple et rapide de modifier ou ajouter des
+références à tout moment.
+Pour t’aider, voici une ▶ courte vidéo ▶ qui détaille l’ajout de vins pas
+à pas.
+🔥 Passe à l’action 🔥 : Ajouter mes premiers vins
+🕖 Ne tarde pas, Winevizer offre 1 mois gratuit et sans engagement
+pour tester la solution!
+```
+
+## Funnel 2 - Mail 2 (J+3)
+
+```
+Bonjour {{ contact.PRENOM }},
+Tu te demandes quelle est la façon la plus rapide d’importer tes vins
+dans Winevizer? Deux méthodes s’offrent à toi :
+```
+1. ✋ **Saisie manuelle** ✋ : Parfaite si tu veux simplement tester avec
+    quelques références.
+2. 📁 **Import via Excel** 📁 : Pratique si tu as déjà une liste plus longue.
+    Envoie-nous ton fichier directement dans ton compte.
+Pour t’aider, voici une ▶ **courte vidéo** ▶ qui détaille l’ajout de vins pas
+à pas.
+**Profite de notre support**
+● Si tu souhaites gagner du temps, transfère-nous directement ta
+liste de vins (Excel ou PDF).
+● Notre équipe peut tout prendre en charge et importer tes
+références.
+Plus tu ajoutes de vins 🍾, plus tu verras **l’impact visuel** qu’aura ta
+carte sur tes clients 🤩.
+Découvre à quoi pourrait ressembler ta carte des vins digitale.
+Nous restons à ta disposition pour toute question,
+
+
+## Funnel 2 - Mail 3 (J+7)
+
+Bonjour {{ contact.PRENOM }},
+Il ne te reste plus qu’à **finaliser l’ajout de tes vins** pour voir ta carte
+Winevizer prendre vie! Une fois tes références enregistrées, tu pourras :
+● 📱 Consulter un **aperçu** de ta carte au format smartphone ou
+tablette.
+● 🔲 Créer ton QR code personnalisé pour accéder à ta carte des
+vins.
+● 🖨 Générer une **version imprimable** de ta carte, pour ceux qui
+préfèrent encore le papier.
+● 🍷 Personnaliser tes descriptions, ajouter des photos ou des
+suggestions d’accords mets-vin.
+Pour t’inspirer, voici quelques **exemples** de cartes déjà en ligne :
+● Exemple de carte digitale (smartphone)
+● Exemple de carte digitale (tablette)
+● Exemple de carte imprimable (PDF)
+⭐ **Fais vivre** ta carte et offre à tes clients une expérience moderne et
+conviviale.
+**Ajoute tes vins et découvrir ta carte**
+Si tu as besoin d’aide, n’hésite pas à répondre à ce mail ou consulter la
+vidéo d'aide. Nous serons ravis de te guider.
+À très vite,
+
+
+## Funnel 3A - Mail 1 (J+1)
+
+```
+Bonjour {{ contact.PRENOM }},
+Félicitations, tu as déjà ajouté tes premiers vins dans Winevizer! C’est
+un excellent début, et tu peux maintenant voir à quoi ressemble ta
+carte numérique.
+Mais pourquoi t’arrêter en si bon chemin? En ajoutant quelques
+références supplémentaires , tu vas :
+● 📱 Tester encore mieux l’apparence de ta carte sur smartphone
+et tablette.
+● 🍷 Permettre à tes clients de découvrir un plus grand choix de
+vins.
+● 📋 Commencer à personnaliser tes descriptions (millésime,
+cépage, notes de dégustation...).
+Besoin d'aide pour ajouter plus de vins?
+📽 Consulte la vidéo explicative
+Prends quelques minutes pour compléter ta liste et faire de ta carte
+une vraie vitrine digitale.
+👉 Ajouter plus de vins
+Si tu as la moindre question, n’hésite pas à nous écrire – nous sommes
+là pour t’aider.
+À bientôt,
+```
+
+## Funnel 3A - Mail 2 (J+3)
+
+```
+Bonjour {{ contact.PRENOM }},
+Tu as commencé à renseigner tes vins dans Winevizer, et c’est déjà un
+super pas en avant!
+Pour aller plus vite, voici quelques idées :
+```
+1. **Import via Excel** : Si tu as ta liste de vins sous la main,
+    envoie-nous ton fichier (Excel). Notre équipe peut faire l’import
+    pour toi.
+2. **Encodage simplifié** : Renseigne juste le nom de la cuvée et du
+    domaine. Le système complétera automatiquement les
+    informations sur tes vins (cépages, appellation, description,
+    image, ...)
+3. **Ajouts progressifs** : Ajoute quelques vins chaque jour, histoire de
+    ne pas tout faire d’un coup.
+📽 **Support** : N'hésite pas à regarder notre vidéo pour en savoir plus ou
+consulter la FAQ.
+🍇 **Astuce** : Une carte plus complète aide tes clients à se projeter, et
+peut même booster tes ventes de bouteilles.
+Si tu souhaites un coup de main, réponds à ce mail ou contacte-nous
+directement.
+👉 **Importer plus de vins dès maintenant**
+A bientôt sur Winevizer
+
+
+## Funnel 3A - Mail 3 (J+7)
+
+```
+Bonjour {{ contact.PRENOM }},
+As-tu déjà pu ajouter quelques références de plus? Avec seulement
+quelques vins, tu n'as pas pu tester toute la puissance d'une carte des
+vins digitale.
+```
+#### Pourquoi aller plus loin?
+
+```
+● Aperçu personnalisé : Découvre ta carte digitale avec plus de
+choix et de jolis visuels.
+● Version imprimable : Génère un PDF que tu peux partager ou
+afficher sur tes tables.
+● Mises à jour en 1 clic : Tes vins changent? Mets ta carte à jour en
+temps réel.
+Prends quelques minutes pour importer le reste de ta carte, ou
+envoie-nous ta liste par mail. Nous ferons le nécessaire.
+👉 Ajouter mes vins et finaliser ma carte
+Si tu as la moindre question, nous sommes là pour t’aider. Tu n'as pas
+le temps d'encoder ta carte? Envoi la nous par mail, on s'en occupe à
+ta place.
+🕖 Ne tarde pas, Winevizer offre 1 mois gratuit et sans engagement
+pour tester la solution!
+Belle continuation,
+```
+
+## Funnel 3B - Mail 1 (J+1)
+
+```
+Bonjour {{ contact.PRENOM }},
+Félicitations! Tu as déjà ajouté des vins à ta carte Winevizer, et ça
+commence à avoir belle allure.
+```
+#### Regarde à quoi tu as accès dès maintenant :
+
+```
+● 📱 Aperçu instantané de ta carte digitale au format smartphone
+ou tablette.
+● 🖨 Possibilité de générer une version imprimable pour ceux qui
+préfèrent encore le papier.
+● 🍷 Mise à jour hyper-simple dès qu’un vin change ou s’épuise.
+Pour générer ton QRCode ou modifier le visuel de ta carte, connecte-toi
+simplement à ton espace Winevizer :
+👉 Me connecter
+N’hésite pas à personnaliser les descriptions, ajouter des photos ou
+modifier les prix pour peaufiner l’expérience de tes clients.
+À très vite,
+```
+
+## Funnel 3B - Mail 2 (J+3)
+
+```
+Bonjour {{ contact.PRENOM }},
+Tu as déjà créé plusieurs vins dans ta carte digitale, bravo! Plus tu
+enrichis ta carte, plus tes clients pourront trouver LE vin idéal.
+```
+#### Quelques pistes pour aller plus loin :
+
+1. **Enrichi tes vins** : Ajoute des descriptions, des accords mets-vins,
+    voire une petite histoire de chaque cuvée
+2. **Personnalise ta carte** : Choisi comment s'affichera ta carte des
+    vins digitale et les parcours proposés aux clients
+3. Améliore ton établissement: Ajoute ton logo et choisi tes couleurs
+🍇 **Petit plus** : Tu peux aussi créer tes propres catégories de vins pour
+faciliter la navigation.
+🔥 Pense à profiter de ta **période d’essai** pour explorer toutes nos
+fonctionnalités et tester ta carte digitale en générant le QR Code.
+📽 **Découvre comment améliorer encore plus ta carte avec notre
+vidéos:**
+● Comment gérer mes vins et améliorer ma carte
+● Configurer et designer ma carte des vins digitale
+● Créer une version PDF imprimable de ma carte des vins
+Nous restons disponibles si tu as la moindre question,
+A bientôt
+
+
+## Funnel 3B - Mail 3 (J+7)
+
+```
+Bonjour {{ contact.PRENOM }},
+Ta carte a déjà fière allure mais il est temps de débloquer tout le
+potentiel de ta carte digitale et d'y encoder l'intégralité de ta carte des
+vins.
+Maintenant, il est temps de finaliser ta carte et de réfléchir à la
+meilleure offre d’abonnement pour ne rien perdre de ton travail après
+la fin de l’essai.
+```
+#### 🗝 Voici ce qui t’attend une fois l'abonnement activé :
+
+```
+● Version smartphone prête à être partagée via un QR code et
+version tablette.
+● Plus de limite de vins à la carte
+● PDF imprimable à personnaliser et QR Code ou chevalet à poser
+sur tes tables.
+● Accès aux statistiques avancées sur l'utilisation de ta carte
+● Accès à toutes les mises à jour et fonctionnalités premium une
+fois souscrit.
+```
+#### 💡 N'oublie pas les avantages d'une carte digitale :
+
+1. Une carte toujours à jour, plus besoin de réimprimer et mise à
+    jour en quelques clics.
+2. Moins besoin de former le personnel à la vente de vins, tu as un
+    véritable sommelier virtuel à ta disposition
+3. Une carte complétement personnalisée et à tes couleurs
+4. Des statistiques avancées sur l'utilisation de ta carte pour
+    pouvoir optimiser ta sélection
+
+
+5. Une augmentation des ventes de vins et du prix moyen par
+    bouteille
+6. Une facilité à mettre en avant des références
+📽 **Découvre comment améliorer encore plus ta carte avec notre
+vidéos:**
+● Comment gérer mes vins et améliorer ma carte
+● Configurer et designer ma carte des vins digitale
+● Créer une version PDF imprimable de ma carte des vins
+Si tu veux plus d’infos sur les abonnements (mensuel ou annuel) :
+👉 **Découvrir les formules**
+Si tu as besoin d’aide pour finaliser ta carte ou pour souscrire,
+écris-nous sans hésiter.
+Au plaisir de te lire,
+
+## Funnel 4A - Mail 1 (J+1)
+
+```
+Bonjour {{ contact.PRENOM }},
+```
+
+```
+Un grand merci pour ta confiance! Ton abonnement Winevizer est
+désormais activé, et tu as maintenant un accès complet à toutes nos
+fonctionnalités.
+```
+#### Que faire en premier?
+
+1. **Finaliser ta carte** : Ajoute des descriptions, des photos, des
+    accords mets-vins pour rendre chaque référence irrésistible.
+2. **Vérifier l’affichage** : Consulte ta carte sur smartphone ou
+    tablette et mets-toi à la place de tes clients.
+3. **Préparer ton QR code** : Pense à l’imprimer et à le placer sur tes
+    tables pour en faire profiter tes convives dès maintenant.
+👉 **Accéder à mon espace Winevizer**
+Pour t’aider, voici quelques ▶ **courte vidéo** ▶ pour t'aider à améliorer
+ta carte digitale:
+● Gestion de vos vins avec Winevizer
+● Configuration de votre carte des vins digitale
+● Création de votre carte des vins PDF imprimable
+Si tu as la moindre question ou besoin d’un accompagnement (même
+rapide), réponds à ce mail et nous serons ravis de te guider.
+Encore bravo de faire partie de l'aventure.
+
+## Funnel 4A - Mail 2 (J+3)
+
+```
+Bonjour {{ contact.PRENOM }},
+```
+
+```
+Cela fait déjà quelques jours que tu as souscrit à Winevizer! As-tu pu
+prendre en main toutes nos fonctionnalités?
+Quelques idées pour aller plus loin :
+● Catégorise tes vins (blanc, rouge, rosé, bulles, etc.) pour aider
+tes clients à s’y retrouver.
+● Ajoute des visuels : Photos de bouteilles, logos de domaine ou
+badges spéciaux pour tes coups de cœur.
+● Teste la version imprimable : Un PDF que tu peux proposer aux
+clients qui préfèrent le support papier.
+Si tu rencontres un souci ou que tu souhaites un accompagnement
+personnalisé , on est là pour toi. Il suffit de répondre à ce mail ou de
+planifier un appel avec nous.
+👉 N'hésite pas à nous faire un petit mail si tu as une question (ou “Voir
+la FAQ”)
+Merci encore de ta confiance,
+```
+## Funnel 4A - Mail 3 (J+7)
+
+```
+Bonjour {{ contact.PRENOM }},
+```
+
+```
+Voilà déjà plus quelques semaines que tu profites pleinement de
+Winevizer. Tu dois avoir un bon aperçu de ce que l’application peut
+t’apporter.
+```
+#### Nous aimerions recueillir ton avis sur :
+
+```
+● Ce qui te plaît : Qu’est-ce qui te facilite la vie ou te fait gagner du
+temps?
+● Ce qui te manque : Y a-t-il une fonctionnalité qui te faciliterait
+encore plus la gestion de ta carte?
+● Tes idées : As-tu des suggestions d’amélioration, de nouveaux
+modules ou d’intégrations avec d’autres outils?
+🥂 Tu es notre meilleure source d’inspiration pour faire évoluer
+Winevizer. Tes retours nous aident à rendre l’application toujours plus
+efficace et agréable pour toi.
+👉 Explique nous ton expérience
+Si tu as la moindre question supplémentaire, ou si tu souhaites
+optimiser encore ta carte, contacte-nous directement. On est là pour
+t’aider!
+Un grand merci pour ton temps,
+```
+## Funnel 4B - Mail 1 (J+1)
+
+
+Bonjour {{ contact.PRENOM }},
+Ton essai gratuit sur Winevizer vient de se terminer. Nous espérons que
+tu as déjà pu constater tout le potentiel d’une carte digitale pour ton
+établissement.
+En revanche, tu ne pourras plus accéder à **toutes nos fonctionnalités**
+tant que tu n’as pas souscrit à une offre.
+
+#### Ce que tu risques de perdre :
+
+● La possibilité de **mettre à jour** ta carte (prix, descriptions,
+nouveautés...).
+● L’accès illimité à l’ **aperçu smartphone et tablette** de ta carte.
+● Les **options d’impression** pour tes menus papier.
+🍷 **Pas d’inquiétude** : Tes données sont conservées et ne disparaîtront
+pas, tant que tu conserves ton compte.
+👉 **Souscrire et retrouver mon accès complet**
+Si tu as besoin d’aide pour choisir le bon abonnement (mensuel ou
+annuel), réponds simplement à ce mail. Nous sommes là pour
+t’accompagner.
+Découvre nos **exemples de cartes** (digitales et imprimables) pour voir
+ce que tu rates:
+● Exemple de carte digitale (smartphone)
+● Exemple de carte digitale (tablette)
+● Exemple de carte imprimable (PDF)
+
+
+```
+À très vite,
+```
+## Funnel 4B - Mail 2 (J+3)
+
+
+```
+Bonjour {{ contact.PRENOM }},
+Ton essai est terminé depuis quelques jours, et tu n’as pas encore
+souscrit à Winevizer. Si tu hésites ou as besoin d’informations
+complémentaires, nous sommes là pour t’aider.
+```
+#### Pourquoi passer à l’abonnement dès maintenant?
+
+```
+● Garder ta carte active : Ne perds pas le fruit de tes efforts d’ajout
+de vins.
+● Accéder à toutes nos fonctionnalités premium (création de QR
+codes, impressions illimitées, support prioritaire...).
+● Offrir à tes clients une expérience moderne et personnalisée
+avec chaque mise à jour en temps réel.
+🥂 Petit plus : Si tu nous envoies ta liste de vins, nous pouvons t’aider à
+importer tout ce qui manque pour que ta carte soit prête à diffuser.
+👉 Découvrir les formules et souscrire
+Si tu préfères qu’on échange de vive voix, n’hésite pas à nous contacter
+pour un rendez-vous téléphonique.
+Si tu as des questions, consulte également notre FAQ.
+À bientôt,
+```
+## Funnel 4B - Mail 3 (J+7)
+
+```
+Bonjour {{ contact.PRENOM }},
+```
+
+Cela fait maintenant plus d’une semaine que ton essai a expiré. On ne
+voudrait pas que tu passes à côté de **l’opportunité** de finaliser ta carte
+des vins et de la rendre accessible à tes clients.
+Pour te donner un coup de pouce, nous avons une offre spéciale :
+**-10 %** sur l’abonnement annuel si tu souscris dans les 3 prochains jours.
+
+#### Pourquoi est-ce le bon moment?
+
+● **Valorise** ton travail existant en gardant ta carte dynamique et
+mise à jour.
+● **Renforce** l’expérience de tes clients avec un outil moderne et
+élégant.
+● **Économise** sur l’abonnement avec notre réduction temporaire.
+👉 **Souscrire maintenant avec -10 %**
+N’hésite pas à nous contacter pour toute question. Nous serons ravis
+de t’aider à retrouver un accès complet.
+Découvre également nos **exemples de cartes** (digitales et
+imprimables) pour voir ce que tu pourrais créer pour tes clients :
+● Exemple de carte digitale (smartphone)
+● Exemple de carte digitale (tablette)
+● Exemple de carte imprimable (PDF)
+Bonne journée,
+
+
