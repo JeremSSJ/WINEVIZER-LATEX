@@ -74,7 +74,7 @@ Le présent rapport traite le Cas n°7, Gestion de la relation client et rétent
 Winevizer, une startup SaaS belge proposant un sommelier virtuel aux établissements Horeca.
 Il s'articule en trois parties~: un premier diagnostic centré sur l'entreprise et son profil
 entrepreneurial~; un second diagnostic focalisé sur la problématique, mobilisant
-le Value Proposition Canvas, la chaîne de valeur de Porter et l'analyse des substituts~; ainsi qu'un
+le Value Proposition Canvas et la chaîne de valeur de Porter; ainsi qu'un
 volet de recommandations opérationnelles.
 
 Trois problématiques souvent confondues sont distinguées d'emblée~: (i)~l'échec d'activation — un
@@ -245,26 +245,83 @@ devient visible.
 
 \section{Chaîne de valeur de Porter~: focus sur la logistique interne}
 
-L'activité primaire
-la plus directement exposée au problème de rétention est la logistique interne, assimilable ici
-à l'onboarding — l'ensemble des étapes par lesquelles les données du restaurateur entrent dans
-le système avant que l'outil ne délivre sa valeur. Six étapes séquentielles sont identifiables~:
-(1)~création du compte~; (2)~confirmation de l'adresse email~; (3)~création de l'établissement
-(11 champs dont 8 obligatoires)~; (4)~ajout de la carte via CSV, saisie manuelle ou import PDF
-(réservé aux comptes payants)~; (5)~traitement IA des vins (2h pour les non-payants, 24 à 48h
-avec revue humaine pour les payants)~; (6)~génération du QR code, étape non guidée et difficile
-à trouver.
+L'activité primaire la plus directement exposée au problème de rétention est la logistique
+interne, assimilable ici à l'onboarding~: l'ensemble des étapes par lesquelles les données du
+restaurateur entrent dans le système avant que l'outil ne délivre sa valeur. En pratique,
+on observe deux parcours différents, sans vraie explication sur lequel privilégier.
 
-Le problème n'est pas la pénibilité intrinsèque de l'encodage — elle serait absorbable si elle
-intervenait après la perception de la valeur — mais son positionnement~: la valeur arrive trop
-tard dans le parcours. Le moment \og{}aha\fg{} (carte en ligne, QR code scanné, sommelier
-opérationnel) est repoussé derrière plusieurs heures d'effort, alors que la psychologie du SaaS
-(Product-Led Growth, Time-to-Value) converge sur l'inverse. Dans le modèle de Porter, un goulot
-en amont détruit la valeur créée par les activités aval~: le coût d'acquisition (principalement
-SEO) est amorti sur 10,6\,\% des comptes créés, 89\,\% disparaissant sans jamais avoir payé~; et
-les utilisateurs qui convertissent malgré la friction sont, par sélection, les plus tolérants à
-celle-ci, non les plus alignés avec l'outil, ce qui pèse aussi sur la stabilité du churn
-(aujourd'hui 10\,\% sur trois ans, dont la moitié volontaire).
+\subsection{Parcours principal~: inscription puis construction guidée de la carte}
+
+Ce parcours, accessible depuis le bouton \og{}connexion / inscription\fg{}, enchaîne six
+étapes~:
+
+\begin{enumerate}[leftmargin=1.5em]
+  \item Création du compte. Deux voies coexistent~: un social login
+        Google / Facebook en un clic, ou une création manuelle qui demande cinq champs obligatoires
+        (Prénom, Nom, Email, Mot de passe, Confirmation du mot de passe) et l'acceptation des
+        conditions générales. La règle de longueur minimale du mot de passe (8 caractères) n'est
+        affichée qu'après saisie, ce qui génère une correction a posteriori plutôt qu'une
+        saisie réussie du premier coup.
+
+  \item Confirmation de l'adresse email. Un popup invite l'utilisateur à
+        consulter sa boîte de réception et à cliquer sur un lien \og{}Confirmer mon email\fg{}~;
+        le clic authentifie alors automatiquement le compte. Deux anomalies ont été observées
+        à cette étape. D'une part, le lien affiche occasionnellement un message \og{}lien
+        expiré\fg{} alors qu'il vient d'être reçu — comportement non systématique, donc
+        difficile à diagnostiquer pour l'utilisateur. D'autre part, il est possible de
+        contourner entièrement cette étape~: en revenant sur l'écran de connexion sans
+        confirmer l'email, l'authentification fonctionne quand même, ce qui interroge sur
+        l'utilité réelle du mail de validation et introduit une friction sans bénéfice.
+
+  \item Création de l'établissement. Une fois dans l'application, un popup
+        de progression annonce quatre étapes à franchir~: (1)~\og{}Créez votre établissement\fg{},
+        (2)~\og{}Créez votre carte des vins\fg{}, (3)~\og{}Adaptez votre carte des vins\fg{},
+        (4)~\og{}Générez votre QR code\fg{}. La première requiert huit champs obligatoires~:
+        nom de l'établissement, type d'établissement, rue, numéro / boîte, pays, devise, ville,
+        code postal. L'utilisateur n'a encore interagi avec aucune fonctionnalité liée au vin.
+
+  \item Encodage de la carte. Trois méthodes sont proposées~: import CSV, saisie
+        manuelle (mode simple ou avancé), ou import par PDF / photo avec lecture automatisée
+        par IA. La troisième — la plus naturelle pour un restaurateur disposant déjà d'une
+        carte papier — est cependant verrouillée derrière le paywall (\og{}Cette méthode n'est
+        disponible que pour les utilisateurs avec un plan payant\fg{}). Les utilisateurs en
+        essai sont donc rabattus sur les deux méthodes les plus coûteuses en temps au moment
+        précis où ils évaluent l'outil.
+
+  \item Traitement IA et \og{}Adaptation de la carte\fg{}. Une fois les vins soumis,
+        un message indique qu'il faut attendre l'identification automatique des vins~;
+        l'utilisateur valide par \og{}OK, j'ai compris\fg{} et se retrouve dans l'application
+        sans consigne claire sur la suite. Le délai peut atteindre plusieurs heures~; pendant
+        ce temps, aucune valeur intermédiaire n'est délivrée.
+
+  \item Génération du QR code. L'étape finale — celle qui rend la carte réellement
+        exploitable en salle — n'est pas guidée et reste difficile à localiser dans
+        l'interface, ce qui allonge encore le délai avant le premier scan.
+\end{enumerate}
+
+À ces six étapes s'ajoutent deux problèmes transverses à l'accompagnement. D'abord, les
+popups d'aide successifs peuvent être fermés par une croix ou un lien \og{}Ne plus
+voir l'aide\fg{}, sans mécanisme de réactivation~: un clic accidentel prive définitivement
+l'utilisateur du guide d'onboarding. Ensuite, l'application propose une interface de type
+chatbot~; en pratique, celle-ci ne répond pas automatiquement mais transfère le
+message au support, qui répond par email ultérieurement. L'écart entre l'attente (réponse
+immédiate) et la réalité (réponse asynchrone) fragilise l'expérience au moment exact où
+l'utilisateur est bloqué.
+
+\subsection{Parcours alternatif~: upload PDF direct depuis la landing page}
+
+Un second parcours est accessible sans création de compte préalable. Plus bas sur la page
+d'accueil, un bloc \og{}Transformez votre carte des vins papier en carte digitale\fg{} permet
+de soumettre trois éléments seulement~: une adresse email, le nom de l'établissement et un
+fichier (PDF ou photo). Environ deux heures plus tard, l'utilisateur reçoit un email contenant
+un lien vers sa carte digitale déjà constituée.
+
+Ce chemin est à la fois plus court et plus aligné avec le besoin du restaurateur. Il fait
+toutefois apparaître une incohérence majeure avec le parcours
+principal~: l'import par PDF, présenté comme réservé aux comptes payants dans le tunnel
+d'inscription classique, est ici librement accessible depuis la landing page. Deux portes
+d'entrée coexistent donc pour la même fonctionnalité, avec des règles d'accès opposées, sans
+que l'utilisateur ne soit orienté vers la plus appropriée.
 
 \section*{PARTIE 3 – CONSULTANCE : RECOMMANDATIONS}
 \addcontentsline{toc}{section}{Partie 3 – Consultance : Recommandations}
