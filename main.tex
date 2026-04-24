@@ -52,6 +52,9 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
+% Compteur pour les annexes (permet \ref sans numérotation automatique)
+\newcounter{annexe}
+
 % Subsubsection (alinéas) : italique
 \titleformat{\subsubsection}
   {\normalfont\normalsize\itshape}{\thesubsubsection}{1em}{}
@@ -61,12 +64,15 @@
 
 
 % Page de garde
+\pagestyle{empty}
 \includepdf[pages=-]{media/front.pdf}
 
 \newpage
 \tableofcontents
 
 \newpage
+\setcounter{page}{1}
+\pagestyle{fancy}
 
 \section{Introduction}
 
@@ -107,7 +113,7 @@ conversion global d'environ 10,6\,\%. La majorité des utilisateurs abandonnent 
 parcours, avant même d'avoir expérimenté le sommelier virtuel.
 
 La fiche d'identité complète de Winevizer (statut, modèle économique, indicateurs clés) est
-présentée en annexe~\ref{annexe:identite}.
+présentée en Annexe~\ref{annexe:identite}.
 
 \section*{PARTIE 2 – DIAGNOSTIC : FOCUS SUR LA PROBLÉMATIQUE}
 \addcontentsline{toc}{section}{Partie 2 – Diagnostic : Focus sur la problématique}
@@ -463,8 +469,11 @@ rétention~; sans activation, pas d'abonnés~; sans compréhension de la valeur,
 
 \newpage
 \appendix
-\section{Annexe 1 : Chaîne de valeur}
-\label{annexe:chaine}
+\pagestyle{empty}
+\phantomsection
+\refstepcounter{annexe}\label{annexe:chaine}
+\section*{Annexe \theannexe : Chaîne de valeur}
+\addcontentsline{toc}{section}{Annexe 1 : Chaîne de valeur}
 
 La chaîne de valeur de Winevizer identifie les activités créatrices de valeur et celles
 à externaliser ou à développer.
@@ -517,11 +526,10 @@ La chaîne de valeur de Winevizer identifie les activités créatrices de valeur
 \end{tabularx}
 
 \newpage
-\section{Annexe 2 : Matrice SWOT}
-\label{annexe:swot}
-
-Synthèse stratégique croisant les résultats du VPC, de la chaîne de valeur, du PESTEL
-et de l'analyse VRIN/VRIO.
+\phantomsection
+\refstepcounter{annexe}\label{annexe:swot}
+\section*{Annexe \theannexe : Matrice SWOT}
+\addcontentsline{toc}{section}{Annexe 2 : Matrice SWOT}
 
 \vspace{1em}
 \begin{tabularx}{\linewidth}{|Y|Y|}
@@ -577,8 +585,10 @@ et de l'analyse VRIN/VRIO.
 \end{tabularx}
 
 \newpage
-\section{Annexe 3 : Fiche d'identité de Winevizer}
-\label{annexe:identite}
+\phantomsection
+\refstepcounter{annexe}\label{annexe:identite}
+\section*{Annexe \theannexe : Fiche d'identité de Winevizer}
+\addcontentsline{toc}{section}{Annexe 3 : Fiche d'identité de Winevizer}
 
 \vspace{0.5em}
 \begin{tabularx}{\linewidth}{|>{\bfseries\raggedright\arraybackslash}p{4cm}|Y|}
