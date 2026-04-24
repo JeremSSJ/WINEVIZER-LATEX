@@ -187,8 +187,8 @@ stratégique est donc validé — ce qui est cohérent avec le fait que, parmi l
 utilisateurs qui déploient réellement la carte dans leur établissement, 20 à 25\,\%
 convertissent à l'abonnement payant.
 
-Le misfit ne se situe pas dans ce que Winevizer fait, mais dans comment
-et quand la valeur est rendue accessible. Notre analyse du parcours
+Le misfit ne se situe pas dans ce que Winevizer fait, mais dans quand
+et comment la valeur est rendue accessible. Notre analyse du parcours
 d'onboarding (landing page, création de compte, confirmation email, création de
 l'établissement, encodage de la carte, génération du QR code) révèle une friction
 cumulative importante avant que l'utilisateur n'atteigne la seule fonctionnalité qui
@@ -210,29 +210,13 @@ Les principaux écarts identifiés sont~:
         existe mais est reléguée dans le pied de page, là où le prospect ne les
         voit pas spontanément~; liste des intégrations POS supportées non mise en avant.
 
-  \item Friction excessive au sign-up et à la création d'établissement : 5 à 6
-        champs au formulaire d'inscription, un parcours de confirmation email confus
-        (lien affichant une erreur même lorsque le compte est créé, absence
-        d'authentification automatique après validation), puis 8 champs obligatoires
-        pour créer l'établissement — avant toute interaction avec le vin. Cette
-        séquence ne délivre aucune valeur intermédiaire et augmente mécaniquement la
-        probabilité d'abandon.
-
-  \item Méthode d'import la plus naturelle verrouillée derrière un paywall : L'import PDF / photo de la carte est, pour un restaurateur déjà équipé d'une
-        carte papier, le chemin de moindre résistance. Il est pourtant réservé aux
-        comptes payants, tandis que les utilisateurs en essai sont orientés vers
-        l'encodage manuel ou CSV — c'est-à-dire la méthode la plus coûteuse en temps,
-        précisément au moment où l'utilisateur évalue la solution.
-
-    \item Délai de traitement des vins après import : le système peut nécessiter jusqu'à 
-      quelques heures pour identifier et traiter l'ensemble des vins. 
-      Ce délai reporte d'autant l'accès au sommelier opérationnel, 
-      au moment même où l'utilisateur évalue la solution.
-
-    \item Génération du QR code peu guidée en fin de parcours : Même si cette étape
-      peut paraître simple en elle-même, elle n'est pas suffisamment accompagnée,
-      ce qui complique l'accès au moment où la carte devient effectivement
-      exploitable par les clients.
+  \item Onboarding trop long avant la première valeur perçue : le parcours cumule
+        plusieurs frictions successives — inscription lourde, paywall sur la méthode
+        d'import la plus naturelle, délai de traitement des vins, génération du QR
+        code peu guidée — sans qu'aucune valeur intermédiaire ne soit délivrée en
+        chemin. Ces étapes relèvent toutefois davantage du fonctionnement opérationnel
+        de l'outil que du VPC~: elles sont donc décrites en détail dans la section
+        suivante consacrée à la chaîne de valeur (cf.~section~\ref{sec:porter}).
 
 \end{itemize}
 
@@ -244,6 +228,7 @@ de l'onboarding seul qu'au décalage entre l'effort demandé et le moment où le
 devient visible.
 
 \section{Chaîne de valeur de Porter~: focus sur la logistique interne}
+\label{sec:porter}
 
 L'activité primaire la plus directement exposée au problème de rétention est la logistique
 interne, assimilable ici à l'onboarding~: l'ensemble des étapes par lesquelles les données du
