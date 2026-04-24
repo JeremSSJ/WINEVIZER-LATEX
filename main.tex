@@ -70,97 +70,57 @@
 
 \section{Introduction}
 
-Dans un secteur Horeca sous pression --- pénurie de sommeliers, rotation élevée du personnel
-de salle souvent peu formé (étudiants, flexi-jobs) et marges fortement dépendantes de la vente
-de vin (30 à 40\,\% du chiffre d'affaires d'un restaurant traditionnel) --- le conseil œnologique
-au client final reste un levier stratégique sous-exploité. C'est sur ce constat qu'a été fondée
-Winevizer en 2021, par Sébastien Demoustiez, au sortir de la crise sanitaire.
+Le présent rapport traite le Cas n°7, Gestion de la relation client et rétention, appliqué à
+Winevizer, une startup SaaS belge proposant un sommelier virtuel aux établissements Horeca.
+Il s'articule en trois parties~: un premier diagnostic centré sur l'entreprise et son profil
+entrepreneurial~; un second diagnostic focalisé sur la problématique, mobilisant
+le Value Proposition Canvas, la chaîne de valeur de Porter et l'analyse des substituts~; ainsi qu'un
+volet de recommandations opérationnelles.
 
-Winevizer est une solution SaaS (Software as a Service) B2B dont le cœur de valeur est un sommelier virtuel accessible au client final via QR code ou tablette. L'outil guide le
-convive à travers des accords mets-vins ou un questionnaire de préférences gustatives, puis
-lui propose une sélection issue exclusivement des vins effectivement disponibles dans
-l'établissement. Winevizer intègre une carte des vins digitale, connectée — si le restaurateur le souhaite — à son
-système de gestion de stock existant~: dès qu'une bouteille est épuisée, elle disparaît
-automatiquement de la carte, sans ressaisie ni réimpression.
+Trois problématiques souvent confondues sont distinguées d'emblée~: (i)~l'échec d'activation — un
+utilisateur qui s'inscrit mais n'atteint jamais la valeur du produit~; (ii)~l'échec de conversion —
+un utilisateur qui termine l'onboarding mais ne souscrit pas à l'issue du mois d'essai~; et
+(iii)~le churn au sens strict — la perte d'un abonné payant existant. Le diagnostic et les
+recommandations qui suivent s'attachent à les nommer et à les traiter distinctement.
 
-Malgré une proposition de valeur distinctive et un référencement naturel parmi les meilleurs
-de son marché, Winevizer fait face à une difficulté structurelle : sur 585 comptes créés depuis
-le lancement, seuls 62 ont souscrit un abonnement et 45 sont aujourd'hui actifs, soit un taux
-de conversion global d'environ 10,6\,\%. La majorité des utilisateurs abandonnent très tôt
-dans le parcours --- avant même d'avoir réellement expérimenté le sommelier virtuel.
-
-Le présent rapport traite le Cas n°7 --- Gestion de la relation client et rétention. Il importe
-d'emblée de distinguer trois problématiques souvent confondues : (i)~l'échec d'activation
---- un utilisateur qui s'inscrit mais n'atteint jamais la valeur du produit ; (ii)~l'échec de
-conversion --- un utilisateur qui termine l'onboarding mais ne souscrit pas à l'issue de son
-mois d'essai ; et (iii)~le churn au sens strict --- la perte d'un abonné payant existant sur
-une période donnée. Ces trois phénomènes ont des moteurs, des métriques et des remèdes
-différents. Le diagnostic et les recommandations qui suivent s'attachent à les nommer
-précisément et à les traiter distinctement.
-
-\newpage
 \section*{PARTIE 1 – DIAGNOSTIC : FOCUS SUR L'ENTREPRISE}
 \addcontentsline{toc}{section}{Partie 1 – Diagnostic : Focus sur l'entreprise}
 
-\section{Présentation générale de Winevizer}
+\section{Présentation de l'entreprise}
 
-La fiche d'identité complète de Winevizer (statut, modèle économique, indicateurs clés)
-est présentée en annexe~\ref{annexe:identite}.
+Dans un secteur Horeca sous pression --- pénurie de sommeliers, rotation élevée du personnel
+de salle peu formé (étudiants, flexi-jobs) et marges fortement dépendantes de la vente de vin
+(30 à 40\,\% du chiffre d'affaires d'un restaurant traditionnel) --- le conseil œnologique au
+client final reste un levier sous-exploité. C'est sur ce constat qu'a été fondée Winevizer en
+2021, par Sébastien Demoustiez, au sortir de la crise sanitaire.
 
-\section{La proposition de valeur}
+Winevizer est une solution SaaS B2B dont le cœur de valeur est un sommelier virtuel accessible
+au client final via QR code ou tablette~: l'outil guide le convive à travers des accords mets-vins
+ou un questionnaire de préférences, et lui propose une sélection restreinte aux vins effectivement
+en stock dans l'établissement. Il intègre également une carte des vins digitale, connectée — si le
+restaurateur le souhaite — à son système de gestion de stock existant.
 
-Le cœur de l'offre n'est ni la carte digitale, ni la gestion de stock~: c'est un \textbf{sommelier
-virtuel contextuel} capable de remplacer — pour les 95\,\% de restaurants qui n'ont pas de
-sommelier en salle — un conseil œnologique que le personnel (souvent étudiant ou flexi-job,
-avec une rotation élevée) n'est pas en mesure de délivrer. La base de données propriétaire
-couvre environ 95\,\% des vins mondialement commercialisés et alimente un algorithme qui
-propose au client final soit un accord mets-vins, soit une sélection par préférences aromatiques,
-toujours restreinte aux vins effectivement en stock dans l'établissement.
+Malgré une proposition de valeur distinctive et un référencement naturel parmi les meilleurs
+de son marché, Winevizer fait face à une difficulté structurelle~: sur 585 comptes créés depuis
+le lancement, seuls 62 ont souscrit un abonnement et 45 sont aujourd'hui actifs, soit un taux de
+conversion global d'environ 10,6\,\%. La majorité des utilisateurs abandonnent très tôt dans le
+parcours, avant même d'avoir expérimenté le sommelier virtuel.
 
-Pour le restaurateur, la valeur économique tient à trois effets~: (i)~un \textbf{upselling
-automatisé} — le client final, mieux guidé, a tendance à monter en gamme plutôt que de
-choisir par défaut le vin le moins cher~; (ii)~la \textbf{neutralisation de la pénurie de personnel
-qualifié} — l'outil parle sept langues et délivre un conseil homogène indépendamment du
-serveur en place~; et (iii)~la \textbf{suppression des coûts et délais de réimpression} de la carte
-papier, grâce à une mise à jour continue et, le cas échéant, une synchronisation avec le système
-de gestion de stock existant du restaurateur.
+La fiche d'identité complète de Winevizer (statut, modèle économique, indicateurs clés) est
+présentée en annexe~\ref{annexe:identite}.
 
-\section{Profil entrepreneurial et implications stratégiques}
-
-La gouvernance actuelle reflète les forces et les limites d'une startup technique pure~: les
-deux associés sont développeurs, sans profil commercial, et opèrent l'activité en complément
-d'un emploi salarié à temps plein. Cette configuration explique à la fois l'agilité produit (les
-décisions d'UX sont pilotées par les statistiques d'usage et les retours clients directs), la
-maîtrise des coûts, et les lacunes commerciales assumées par le fondateur~: prospection
-active quasi-inexistante, outbound marketing inefficace, et dépendance structurelle à
-l'inbound (SEO et bouche-à-oreille). Le passage en société prévu en T1~2026, associé au
-recrutement d'un profil commercial à mi-temps, vise précisément à lever ce plafond de
-croissance — tout en ouvrant l'accès aux primes publiques réservées aux jeunes entités
-juridiques. Ces caractéristiques managériales ne sont pas accessoires pour la suite du
-diagnostic~: elles déterminent directement les leviers qu'il est réaliste de mobiliser pour
-traiter la problématique du Cas n°7.
-
-\newpage
 \section*{PARTIE 2 – DIAGNOSTIC : FOCUS SUR LA PROBLÉMATIQUE}
 \addcontentsline{toc}{section}{Partie 2 – Diagnostic : Focus sur la problématique}
 
-Comme annoncé en introduction, la problématique du Cas n°7 recouvre trois phénomènes
-distincts — activation, conversion, churn — qui mobilisent des outils de diagnostic
-différents. Le \textit{Value Proposition Canvas} (VPC) permet d'évaluer
-l'adéquation entre la valeur offerte et les besoins réels du restaurateur~; la \textit{chaîne de
-valeur} de Porter isole l'endroit précis, dans le processus interne, où cette valeur est
-détruite avant d'atteindre le client~; les \textit{cinq forces} de Porter, en se focalisant sur
-les substituts, situent Winevizer dans son paysage concurrentiel.
+\section{Value Proposition Canvas~: focus sur le fit et le misfit}
 
-\section{Analyse du profil client et de la proposition de valeur}
-
-\subsection{Le Profil du Client (\textit{Customer Profile})}
+\subsection{Customer Profile}
 
 Le client cible est le restaurateur indépendant ou le patron de bar à vins, généralement
 propriétaire-opérateur, qui peut cumuler les fonctions de gestion, de cuisine et de salle.
 
 \begin{itemize}[leftmargin=1.5em]
-  \item \textbf{Customer Jobs (ce que le client cherche à accomplir) :}
+  \item Customer Jobs (ce que le client cherche à accomplir) :
         maximiser la marge par couvert (la vente de vin représente
         30 à 40\,\% du chiffre d'affaires d'un restaurant traditionnel et autorise des
         coefficients multiplicateurs de 3 à 5)~; offrir un service de qualité homogène
@@ -170,7 +130,7 @@ propriétaire-opérateur, qui peut cumuler les fonctions de gestion, de cuisine 
         accueil, sélection)~; projeter une image professionnelle, se
         différencier des concurrents.
 
-  \item \textbf{Pains :}
+  \item Pains :
         Pénurie chronique de sommeliers qualifiés (présents dans moins de 5\,\% des
         établissements) et coût prohibitif de leur recrutement~; personnel de salle
         majoritairement composé d'étudiants et de flexi-jobs, difficile à former sur le
@@ -179,7 +139,7 @@ propriétaire-opérateur, qui peut cumuler les fonctions de gestion, de cuisine 
         condamnant l'établissement à présenter un inventaire périmé ou incomplet~;
         impossibilité de proposer un conseil multilingue à une clientèle internationale.
 
-  \item \textbf{Gains :}
+  \item Gains :
         Ticket moyen plus élevé via un meilleur upselling~; baisse de la
         dépendance au niveau de qualification du personnel~; meilleure satisfaction et
         fidélisation des clients finaux~; visibilité sur les préférences réelles de la
@@ -187,10 +147,10 @@ propriétaire-opérateur, qui peut cumuler les fonctions de gestion, de cuisine 
         globale.
 \end{itemize}
 
-\subsection{Proposition de Valeur (\textit{Value Proposition})}
+\subsection{Value Proposition}
 
 \begin{itemize}[leftmargin=1.5em]
-  \item \textbf{Products \& Services :} Le produit central est un sommelier virtuel
+  \item Products \& Services : Le produit central est un sommelier virtuel
         B2B2C combinant~: une base de données couvrant $\sim$95\,\% des vins
         commercialisés dans le monde~; un algorithme de recommandation croisant accords
         mets-vins et préférences aromatiques~; une carte digitale consultable en 7
@@ -201,34 +161,34 @@ propriétaire-opérateur, qui peut cumuler les fonctions de gestion, de cuisine 
         d'ajuster la cave aux préférences observées~; une version PDF imprimable de la
         carte~; un support client assuré par le fondateur lui-même.
 
-  \item \textbf{Pain Relievers :}
+  \item Pain Relievers :
         Le sommelier virtuel se substitue au recrutement d'un sommelier humain et à la
-        formation du personnel de salle, neutralisant coût et pénurie. La carte digitale
-        synchronisée supprime le cycle de réimpression. Le multilinguisme natif répond
-        au besoin d'une clientèle internationale. L'interface en libre-service permet
+        formation du personnel de salle, neutralisant coût et pénurie~; La carte digitale
+        synchronisée supprime le cycle de réimpression~; Le multilinguisme natif répond
+        au besoin d'une clientèle internationale~; L'interface en libre-service permet
         au client final de décider sans solliciter un serveur non formé.
 
-  \item \textbf{Gain Creators :}
+  \item Gain Creators :
         L'algorithme oriente le client vers des choix mieux adaptés à son plat et à ses
-        goûts, ce qui accroît le ticket moyen et la satisfaction. Les statistiques
+        goûts, ce qui accroît le ticket moyen et la satisfaction~; Les statistiques
         d'usage révèlent les préférences latentes (par exemple une surreprésentation
         des recherches de blancs légers non reflétée dans la cave) et transforment la
-        gestion de carte en décision pilotée par la donnée. Le prix d'entrée
+        gestion de carte en décision pilotée par la donnée~; Le prix d'entrée
         (24,99\,€/mois) rend l'adoption indolore à l'échelle d'un établissement.
 \end{itemize}
 
 \subsection{Synthèse~: Fit et Misfit comme levier de rétention}
 
-Sur le fond, l'adéquation entre l'offre et le profil client est forte~: les \textit{gain
-creators} et les \textit{pain relievers} de Winevizer répondent directement aux
-\textit{jobs} et aux \textit{pains} du restaurateur cible, en particulier sur la pénurie
-de compétences œnologiques et sur l'obsolescence des cartes papier. Le \textit{Fit}
+Sur le fond, l'adéquation entre l'offre et le profil client est forte~: les gain
+creators et les pain relievers de Winevizer répondent directement aux
+jobs et aux pains du restaurateur cible, en particulier sur la pénurie
+de compétences œnologiques et sur l'obsolescence des cartes papier. Le Fit
 stratégique est donc validé — ce qui est cohérent avec le fait que, parmi les
 utilisateurs qui déploient réellement la carte dans leur établissement, 20 à 25\,\%
 convertissent à l'abonnement payant.
 
-Le \textit{misfit} ne se situe pas dans ce que Winevizer fait, mais dans \textbf{comment}
-et \textbf{quand} la valeur est rendue accessible. Un audit du parcours d'inscription et
+Le misfit ne se situe pas dans ce que Winevizer fait, mais dans comment
+et quand la valeur est rendue accessible. Notre analyse du parcours
 d'onboarding (landing page, création de compte, confirmation email, création de
 l'établissement, encodage de la carte, génération du QR code) révèle une friction
 cumulative importante avant que l'utilisateur n'atteigne la seule fonctionnalité qui
@@ -236,16 +196,21 @@ porte réellement la valeur — le sommelier virtuel opérationnel dans son éta
 Les principaux écarts identifiés sont~:
 
 \begin{itemize}[leftmargin=1.5em]
-  \item \textbf{Décalage de discours en haut de funnel.} La page d'accueil communique
+  \item Décalage de discours en haut de funnel : La page d'accueil communique
         sur des fonctionnalités (pas de réimpression, QR code, tablette) plutôt que sur
-        l'impact métier (uplift de chiffre d'affaires, autonomie du personnel, marge).
+        l'impact métier (augmentation de chiffre d'affaires, autonomie du personnel, marge).
         Les concurrents directs (Somm'it~: \og{}Gagnez trois points de marge\fg{}~; Coena~:
         \og{}+20\,\% de CA vins\fg{}~; AsterFox~: \og{}Augmentez votre chiffre d'affaires\fg{})
         positionnent leur promesse sur le ROI~; Winevizer, non. Le prospect ne dispose
         donc pas, au premier contact, du cadre d'évaluation qui justifierait son
         investissement en temps dans la phase d'essai.
 
-  \item \textbf{Friction excessive au sign-up et à la création d'établissement.} 5 à 6
+  \item Signaux de confiance peu visibles : Absence de témoignages clients et de
+        mentions presse en position prominente~; la mention de partenaires
+        existe mais est reléguée dans le pied de page, là où le prospect ne les
+        voit pas spontanément~; liste des intégrations POS supportées non mise en avant.
+
+  \item Friction excessive au sign-up et à la création d'établissement : 5 à 6
         champs au formulaire d'inscription, un parcours de confirmation email confus
         (lien affichant une erreur même lorsque le compte est créé, absence
         d'authentification automatique après validation), puis 8 champs obligatoires
@@ -253,419 +218,198 @@ Les principaux écarts identifiés sont~:
         séquence ne délivre aucune valeur intermédiaire et augmente mécaniquement la
         probabilité d'abandon.
 
-  \item \textbf{Méthode d'import la plus naturelle verrouillée derrière un paywall.}
-        L'import PDF / photo de la carte est, pour un restaurateur déjà équipé d'une
+  \item Méthode d'import la plus naturelle verrouillée derrière un paywall : L'import PDF / photo de la carte est, pour un restaurateur déjà équipé d'une
         carte papier, le chemin de moindre résistance. Il est pourtant réservé aux
         comptes payants, tandis que les utilisateurs en essai sont orientés vers
         l'encodage manuel ou CSV — c'est-à-dire la méthode la plus coûteuse en temps,
         précisément au moment où l'utilisateur évalue la solution.
 
-  \item \textbf{Délai de valeur allongé.} Après l'import, une fenêtre d'identification
-        IA de plusieurs heures précède la disponibilité réelle du sommelier, et la
-        navigation jusqu'à la génération du QR code n'est pas guidée à la fin du
-        parcours.
+    \item Délai de traitement des vins après import : le système peut nécessiter jusqu'à 
+      quelques heures pour identifier et traiter l'ensemble des vins. 
+      Ce délai reporte d'autant l'accès au sommelier opérationnel, 
+      au moment même où l'utilisateur évalue la solution.
 
-  \item \textbf{Signaux de confiance faibles.} Absence de témoignages clients, de logos
-        de restaurants partenaires ou de mentions presse prominents sur la landing
-        page~; liste des intégrations POS supportées non mise en avant.
+    \item Génération du QR code peu guidée en fin de parcours : Même si cette étape
+      peut paraître simple en elle-même, elle n'est pas suffisamment accompagnée,
+      ce qui complique l'accès au moment où la carte devient effectivement
+      exploitable par les clients.
+
 \end{itemize}
 
-Ce diagnostic invalide la lecture naïve selon laquelle \og{}20\,\% abandonnent parce que
-l'onboarding est pénible\fg{}. La question plus exacte est~: \textit{l'utilisateur ne
-perçoit pas la valeur avant d'avoir franchi la friction, et il rationne donc son effort
-en fonction d'une promesse qu'il n'a pas comprise.} Ce problème relève principalement
-de l'\textbf{échec d'activation} et, secondairement, de l'échec de conversion~; il
-n'affecte le churn qu'indirectement, en dégradant la qualité de la base d'abonnés qui
-entre in fine en phase de rétention.
+Cette analyse suggère que la valeur de la solution devient perceptible trop tard
+dans le parcours. Autrement dit, avant d'atteindre le moment où l'utilité concrète de
+Winevizer apparaît, l'utilisateur a déjà dû franchir plusieurs étapes qui mobilisent du
+temps et de l'attention. Le frein semble donc moins tenir à une pénibilité intrinsèque
+de l'onboarding seul qu'au décalage entre l'effort demandé et le moment où le bénéfice
+devient visible.
 
-\section{La chaîne de valeur de Porter — focus sur la logistique interne}
+\section{Chaîne de valeur de Porter~: focus sur la logistique interne}
 
-La chaîne de valeur complète de Winevizer est reproduite en annexe~\ref{annexe:chaine}.
-Pour le Cas n°7, l'attention est concentrée sur l'activité primaire la plus directement
-exposée au problème de rétention~: la \textbf{logistique interne}, assimilable ici à
-l'\textit{onboarding} — soit l'ensemble des étapes par lesquelles les données du
-restaurateur (établissement, carte, vins, éventuels connecteurs de stock) entrent dans
-le système avant que l'outil puisse délivrer sa valeur.
+L'activité primaire
+la plus directement exposée au problème de rétention est la logistique interne, assimilable ici
+à l'onboarding — l'ensemble des étapes par lesquelles les données du restaurateur entrent dans
+le système avant que l'outil ne délivre sa valeur. Six étapes séquentielles sont identifiables~:
+(1)~création du compte~; (2)~confirmation de l'adresse email~; (3)~création de l'établissement
+(11 champs dont 8 obligatoires)~; (4)~ajout de la carte via CSV, saisie manuelle ou import PDF
+(réservé aux comptes payants)~; (5)~traitement IA des vins (2h pour les non-payants, 24 à 48h
+avec revue humaine pour les payants)~; (6)~génération du QR code, étape non guidée et difficile
+à trouver.
 
-Le processus actuel se décompose en six étapes séquentielles~: (1)~création du compte
-sur la landing page~; (2)~confirmation de l'adresse email~; (3)~création de
-l'établissement (11 champs dont 8 obligatoires~: raison sociale, type, adresse complète,
-pays, devise)~; (4)~ajout de la carte des vins via l'une des trois méthodes disponibles
-(CSV/Excel, saisie manuelle, ou import PDF réservé aux comptes payants)~;
-(5)~traitement IA des vins pour identification et génération des accords (2h pour les
-non-payants, 24 à 48h pour les clients payants qui bénéficient d'une revue humaine)~;
-(6)~génération du QR code, étape qui n'est pas explicitement pointée par le guide
-d'onboarding et requiert une navigation non triviale vers la section \og{}Mes
-établissements\fg{}. S'y ajoute une séquence d'emails d'activation qui relance
-l'utilisateur à chaque franchissement de palier, mais dont le taux d'ouverture décline
-avec l'épuisement de la motivation initiale.
+Le problème n'est pas la pénibilité intrinsèque de l'encodage — elle serait absorbable si elle
+intervenait après la perception de la valeur — mais son positionnement~: la valeur arrive trop
+tard dans le parcours. Le moment \og{}aha\fg{} (carte en ligne, QR code scanné, sommelier
+opérationnel) est repoussé derrière plusieurs heures d'effort, alors que la psychologie du SaaS
+(Product-Led Growth, Time-to-Value) converge sur l'inverse. Dans le modèle de Porter, un goulot
+en amont détruit la valeur créée par les activités aval~: le coût d'acquisition (principalement
+SEO) est amorti sur 10,6\,\% des comptes créés, 89\,\% disparaissant sans jamais avoir payé~; et
+les utilisateurs qui convertissent malgré la friction sont, par sélection, les plus tolérants à
+celle-ci, non les plus alignés avec l'outil, ce qui pèse aussi sur la stabilité du churn
+(aujourd'hui 10\,\% sur trois ans, dont la moitié volontaire).
 
-Le problème n'est pas tant que l'encodage est \textit{pénible} — il l'est, mais cette
-pénibilité serait absorbable si elle intervenait après que l'utilisateur a perçu la
-valeur du produit. Il est que \textbf{la valeur arrive trop tard dans le parcours}~: le
-moment \og{}aha\fg{} du produit (voir sa carte en ligne, prête à être scannée, avec le
-sommelier opérationnel) est repoussé derrière plusieurs heures d'effort et d'attente,
-alors que tous les signaux de la psychologie SaaS (Product-Led Growth, Time-to-Value)
-convergent sur l'inverse~: faire vivre la valeur en quelques minutes, puis demander
-l'effort d'enrichissement. Le fondateur reconnaît d'ailleurs que la structuration de
-l'onboarding autour d'un framework PLG ou d'un \textit{Time-to-Value} défini est un axe
-d'amélioration prioritaire mais pas encore engagé.
-
-\subsection{Impact sur la marge et la création/destruction de valeur}
-
-Dans le modèle de Porter, la marge résulte de l'ensemble des activités de la chaîne~;
-un goulot d'étranglement sur une activité primaire en amont détruit la valeur créée par
-toutes les activités en aval. C'est exactement ce qui se produit ici~:
-
-\begin{itemize}[leftmargin=1.5em]
-  \item \textbf{Coûts d'acquisition mal amortis.} Le coût d'acquisition d'un utilisateur,
-        principalement absorbé par l'investissement SEO continu et, marginalement, par
-        les campagnes outbound, est amorti sur une base de seulement 10,6\,\% de
-        souscriptions. 89\,\% des comptes créés disparaissent sans jamais avoir payé.
-        Toute amélioration du taux d'activation a donc un effet de levier mécanique sur
-        le ROI marketing.
-
-  \item \textbf{Goulot d'onboarding qui précède la valeur.} Le goulot n'est pas l'encodage
-        \textit{en soi}, mais son positionnement dans la séquence~: l'utilisateur doit
-        livrer l'intégralité de sa carte \textit{avant} de pouvoir tester le sommelier
-        virtuel. Dans le vocabulaire du cours, c'est un \textit{SI expert sur le fond
-        mais inefficient dans sa modalité d'accès} — une variante contemporaine du
-        problème mis en évidence dans le cas Benetton étudié en cours.
-
-  \item \textbf{Effet d'amont sur la rétention.} Les utilisateurs qui convertissent malgré
-        une activation difficile sont, par sélection, ceux qui ont le plus de tolérance
-        à la friction — pas nécessairement ceux qui ont le plus d'affinité avec l'outil.
-        Une activation plus fluide élargirait la base d'abonnés et améliorerait
-        probablement, à terme, la stabilité du churn (aujourd'hui à 10\,\% sur 3 ans,
-        dont environ la moitié est volontaire et donc actionnable).
-\end{itemize}
-
-\section{Les 5 forces (+1) de Porter — focus sur les substituts}
-
-Une analyse exhaustive des cinq forces de Porter dépasserait le cadre de ce rapport~;
-on se concentre ici sur la force la plus pertinente pour Winevizer, à savoir la
-\textbf{menace des produits de substitution}, qui conditionne la différenciation durable
-de l'offre. Trois cercles sont à distinguer~:
-
-\begin{itemize}[leftmargin=1.5em]
-  \item \textbf{Substituts directs.} \textit{Somm'it} (France, \url{www.sommit.app}) est
-        le concurrent identifié par le fondateur comme le plus sérieux~: plus ancien,
-        mieux intégré aux POS, positionné sur les grandes cartes gastronomiques (300 à
-        500 références) avec un pricing supérieur (50 à 150\,€/mois selon volume et
-        options) et une proposition marketing orientée ROI (\og{}+3 points de marge,
-        –50\,\% de pertes\fg{}). \textit{Coena} (\url{www.coena.fr}) propose une solution
-        comparable avec une promesse explicite de \og{}+20\,\% de CA vins\fg{} et une
-        communication visuellement plus avancée (logos clients, témoignages).
-        \textit{AsterFox} (\url{www.asterfox.com}) met en avant l'analyse des tendances
-        de marché et l'uplift de chiffre d'affaires. \textit{GrapeGPT} et plusieurs
-        initiatives émergentes combinent IA générative et menus QR code sans base de
-        données sommelière dédiée.
-
-  \item \textbf{Substituts fonctionnels.} Les solutions qui se contentent d'afficher une
-        carte PDF sur tablette ou un menu QR code générique (Sunday, TheFork
-        \textit{in-app}, plateformes de menus digitaux) couvrent partiellement la
-        promesse de digitalisation mais sans le conseil œnologique~; pour un
-        restaurateur non sensibilisé à la différence, ce sont des substituts perçus
-        \og{}suffisants\fg{} et souvent moins chers.
-
-  \item \textbf{Substituts humains et latents.} Le sommelier en salle (dans les 5\,\%
-        d'établissements qui en disposent), le serveur formé, et surtout les
-        \textbf{assistants d'IA générative grand public} (ChatGPT, Claude) sollicités
-        directement par les clients finaux — qui peuvent déjà suggérer un accord
-        mets-vins à partir d'une photo de carte — représentent une force de
-        substitution latente, dont le fondateur reconnaît qu'elle constitue, à ses yeux,
-        la menace stratégique principale à horizon 3~ans.
-\end{itemize}
-
-Cette cartographie nourrit directement les recommandations de différenciation
-développées en Partie~3~: Winevizer détient un avantage sur le conseil contextualisé au
-stock réel, mais cet avantage n'est ni breveté ni rendu visible — deux fragilités à
-traiter.
-
-\section{Conclusion du diagnostic}
-
-Plusieurs outils d'analyse complémentaires ont été mobilisés dans ce diagnostic~: le
-VPC et la chaîne de valeur de Porter développés ci-dessus, ainsi qu'un PESTEL et une
-analyse VRIN/VRIO menés en parallèle dont les résultats sont synthétisés dans la
-\textbf{matrice SWOT} présentée en annexe~\ref{annexe:swot}. Cette synthèse capture le
-mieux l'interaction entre les facteurs internes (algorithme sommelier distinctif, base
-de données propriétaire, SEO excellent, mais équipe réduite et force commerciale
-inexistante) et externes (tendance à la digitalisation Horeca, opportunité US, mais
-menace IA générative et concurrence directe mieux financée). Elle pose le cadre
-stratégique dans lequel s'inscrivent les recommandations opérationnelles de la
-Partie~3, ciblées sur l'activation, la conversion et la rétention.
-
-\newpage
 \section*{PARTIE 3 – CONSULTANCE : RECOMMANDATIONS}
 \addcontentsline{toc}{section}{Partie 3 – Consultance : Recommandations}
 
-Les recommandations qui suivent sont formulées comme des \textbf{options}~: pour chacune,
-plusieurs approches sont présentées avec leurs arbitrages (effort, coût, impact, risque)
-de manière à outiller la décision du fondateur plutôt qu'à la contraindre. Elles sont
-ordonnancées par \textbf{rapport impact/effort décroissant} et regroupées en trois
-horizons~: (A)~\textit{quick wins} activables immédiatement par l'équipe actuelle~;
-(B)~chantiers produit à planifier sur le semestre qui suit le passage en société~;
-(C)~leviers de rétention à instrumenter une fois la base d'abonnés consolidée. Les
-estimations chiffrées sont volontairement indicatives et reposent sur des benchmarks
-SaaS publics~; elles visent à fournir un ordre de grandeur, non une projection
-comptable.
-
-\subsection*{Hiérarchie des recommandations (synthèse)}
-
-\vspace{0.5em}
-\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{0.6cm}|Y|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.8cm}|}
-  \hline
-  \textbf{\#} & \textbf{Recommandation} & \textbf{Horizon} & \textbf{Effort} & \textbf{Impact} \\ \hline
-  R1 & Repositionner la landing page sur le ROI et faire de l'import PDF le point d'entrée & A & Faible & Élevé \\ \hline
-  R2 & Simplifier le sign-up et corriger la confirmation email & A & Faible & Élevé \\ \hline
-  R3 & Ouvrir l'import PDF en période d'essai (avec quota) & A & Faible & Élevé \\ \hline
-  R4 & Redesign de l'onboarding autour du \textit{Time-to-Value} & B & Moyen & Élevé \\ \hline
-  R5 & Mettre en avant la preuve sociale et les intégrations & A & Faible & Moyen \\ \hline
-  R6 & Gestion automatisée des échecs de paiement (\textit{dunning}) & B & Faible & Moyen \\ \hline
-  R7 & Système d'alerte précoce de churn sur abonnés & C & Moyen & Moyen \\ \hline
-  R8 & Programme de fidélisation et parrainage & C & Moyen & Moyen \\ \hline
-  R9 & Différenciation défensive face aux substituts (IA, Somm'it) & B & Moyen & Stratégique \\ \hline
-  R10 & Boucle de fraude sur l'essai gratuit & A & Faible & Urgent \\ \hline
-\end{tabularx}
+Les recommandations ci-dessous sont formulées comme des options plutôt que comme des
+prescriptions~: pour chacune, les arbitrages clés (effort, impact, risque) sont explicités afin
+d'outiller la décision du fondateur. Elles sont ordonnées par rapport impact/effort décroissant
+et regroupées en trois horizons~: (A)~actions activables immédiatement par l'équipe actuelle~;
+(B)~chantiers produit à planifier sur le semestre post-passage en société~; (C)~leviers de
+rétention à instrumenter une fois la base d'abonnés consolidée. Les ordres de grandeur chiffrés
+reposent sur des benchmarks SaaS publics et sont volontairement indicatifs.
 
 \subsection{R1 — Repositionner la landing page sur le ROI métier (Horizon A)}
 
-\textbf{Diagnostic de référence.} Section~5.3 (misfit de discours) et section~7
-(substituts directs).
-
-\textbf{Enjeu.} Le prospect arrive sur la page d'accueil sans comprendre ce que l'outil
-lui rapportera en euros. Les concurrents directs communiquent tous sur un chiffre
-d'uplift~; Winevizer, non.
-
-\textbf{Options.}
-\begin{itemize}[leftmargin=1.5em]
-  \item \textit{Option A — Reformulation du \textit{headline} et des bénéfices.} Remplacer
-        \og{}Simplifiez la gestion de votre carte des vins\fg{} par une promesse
-        quantifiée du type \og{}Vendez plus de vin sans former votre personnel\fg{} ou
-        \og{}Le sommelier virtuel qui augmente le ticket moyen de vos couverts\fg{}.
-        Ajouter une section \og{}pourquoi Winevizer\fg{} en trois bénéfices chiffrés
-        appuyés sur les données d'usage du fondateur (à collecter et anonymiser).
-        Effort~: 1 à 2 journées de copywriting.
-  \item \textit{Option B — Refonte complète du funnel landing page.} Option~A + A/B test
-        de deux variantes d'accueil pendant 4 à 6 semaines via Google Optimize ou VWO.
-        Effort~: 1 à 2 semaines-homme + $\sim$100\,€/mois d'outillage.
-\end{itemize}
-
-\textbf{KPI.} Taux de création de compte par visiteur unique (cible~: +30\,\% à 3 mois).
+Le prospect arrive sur la page d'accueil sans comprendre ce que l'outil lui rapportera en
+euros, alors que tous les concurrents directs communiquent sur un chiffre d'uplift. La réponse
+de moindre effort consiste à reformuler le \textit{headline} et les bénéfices~: remplacer
+\og{}Simplifiez la gestion de votre carte des vins\fg{} par une promesse quantifiée (\og{}Vendez
+plus de vin sans former votre personnel\fg{}) et ajouter une section \og{}pourquoi Winevizer\fg{}
+en trois bénéfices chiffrés, appuyés sur les données d'usage internes à collecter et anonymiser.
+Une refonte plus ambitieuse complèterait ce travail par un A/B test de variantes d'accueil
+pendant quatre à six semaines. Indicateur cible~: taux de création de compte par visiteur
+unique, +30\,\% à trois mois.
 
 \subsection{R2 — Simplifier le parcours d'inscription (Horizon A)}
 
-\textbf{Diagnostic de référence.} Section~5.3 (friction au sign-up), section~6.
-
-\textbf{Options d'authentification.}
-\begin{itemize}[leftmargin=1.5em]
-  \item \textit{Option A — Email + magic link.} Un seul champ, pas de mot de passe
-        initial. Meilleur compromis effort/résultat pour un public peu technophile.
-  \item \textit{Option B — Email + OTP à 6 chiffres.} Même bénéfice, plus adapté si
-        l'équipe souhaite ouvrir ultérieurement une authentification par téléphone.
-        Peut être combinée avec la création automatique de compte à partir de l'upload
-        PDF (voir R3), en envoyant l'OTP directement après l'upload. Robuste au risque
-        de perte de l'email initial~: l'utilisateur peut toujours redemander un OTP.
-  \item \textit{Option C — Social login (Google, Apple).} Moindre effort pour
-        l'utilisateur mais dépendance aux fournisseurs tiers et coût d'intégration
-        supérieur.
-\end{itemize}
-
-\textbf{Actions complémentaires.} Retirer le champ \og{}confirmation de mot de passe\fg{}
-et le remplacer par un toggle \og{}afficher/masquer\fg{}. Afficher les règles de mot de
-passe \textit{avant} la saisie, non après. Corriger le lien de confirmation email
-(source du message d'erreur trompeur) ou, plus simplement, \textbf{supprimer la
-confirmation email bloquante} si elle n'est pas requise sur le plan légal (à vérifier)
-et la remplacer par une vérification souple a posteriori. Si elle est conservée,
-auto-authentifier l'utilisateur au clic sur le lien.
-
-\textbf{KPI.} Taux de passage \og{}compte créé $\rightarrow$ établissement créé\fg{}
-(actuellement la première étape de perte de 20\,\% — cible~: $<$5\,\%). Effort~: 2 à 5
-jours-homme.
+Plusieurs options d'authentification moins friables se présentent~: un \textit{magic link} par
+email (un seul champ, pas de mot de passe initial), un OTP à six chiffres (également combinable
+avec la création automatique de compte à partir d'un upload PDF, voir R3) ou un \textit{social
+login} Google/Apple (moindre effort utilisateur mais dépendance aux tiers). En parallèle,
+retirer le champ \og{}confirmation de mot de passe\fg{} au profit d'un \textit{toggle}
+afficher/masquer, exposer les règles avant la saisie, et soit supprimer la confirmation email
+bloquante (si non requise légalement — à vérifier) soit auto-authentifier l'utilisateur au clic
+sur le lien. Le KPI prioritaire est le taux de passage \og{}compte créé $\rightarrow$
+établissement créé\fg{}, aujourd'hui première étape de perte (20\,\%), avec une cible inférieure
+à 5\,\%. Effort~: deux à cinq jours-homme.
 
 \subsection{R3 — Faire de l'import PDF la porte d'entrée principale (Horizon A)}
 
-\textbf{Diagnostic de référence.} Sections~5.3 et~6 (chemin de moindre résistance
-verrouillé).
-
-\textbf{Enjeu.} L'import PDF est le seul point d'entrée naturel pour un restaurateur
-disposant déjà d'une carte papier. Aujourd'hui, il est à la fois le plus caché (widget
-secondaire sur la landing page, onglet le moins visible dans le back-office) et le
-seul verrouillé derrière le paywall.
-
-\textbf{Options.}
-\begin{itemize}[leftmargin=1.5em]
-  \item \textit{Option A — Ouvrir l'import PDF aux comptes gratuits avec quota de 50
-        vins} (plan déjà évoqué par le fondateur). Cohérent avec le coût marginal du
-        traitement IA désormais automatisé. L'\textit{upsell} naturel intervient quand
-        la carte dépasse le quota.
-  \item \textit{Option B — PDF en point d'entrée unique depuis la landing page.} Le
-        visiteur dépose son PDF~; un compte est créé automatiquement, accessible par
-        OTP envoyé sur l'email fourni. Inversion de la hiérarchie actuelle~: le chemin
-        manuel / CSV devient une option secondaire accessible par un bouton \og{}je n'ai
-        pas de carte à importer\fg{}. Cette option élimine à elle seule le plus gros
-        goulot d'onboarding et réduit drastiquement le \textit{Time-to-Value}.
-  \item \textit{Option C — Statu quo avec tutoriel enrichi.} Maintenir le paywall
-        actuel et investir en vidéos d'onboarding. Évaluée comme la moins efficace au
-        regard du diagnostic~: on compense un problème d'architecture par du contenu.
-\end{itemize}
-
-\textbf{Risque résiduel à maîtriser.} L'email qui contient le lien d'accès au compte
-peut tomber en spam ou être effacé par l'utilisateur avant d'avoir défini un mot de
-passe. L'authentification par OTP rechargeable à la demande (option~B et R2) supprime
-ce risque.
-
-\textbf{KPI.} Taux d'atteinte du \og{}moment aha\fg{} (carte en ligne + QR code généré)
-à J+1. Cible~: $>$40\,\%.
+L'import PDF est le seul point d'entrée naturel pour un restaurateur disposant déjà d'une
+carte papier, pourtant il est aujourd'hui à la fois le plus caché (widget secondaire, onglet
+peu visible) et le seul verrouillé derrière le paywall. Première option~: l'ouvrir aux comptes
+gratuits avec un quota de 50 vins (plan déjà évoqué par le fondateur), l'\textit{upsell}
+intervenant naturellement au dépassement. Option plus structurante~: placer l'upload PDF en
+point d'entrée unique depuis la landing page, avec création automatique de compte et accès par
+OTP — le chemin manuel/CSV devenant secondaire via un bouton \og{}je n'ai pas de carte à
+importer\fg{}. Cette inversion élimine à elle seule le principal goulot d'onboarding. L'option
+de statu quo avec tutoriels vidéo enrichis compenserait un problème d'architecture par du
+contenu et est à écarter. Risque résiduel~: l'email contenant le lien d'accès peut se perdre
+(spam, suppression)~; l'OTP rechargeable à la demande (R2) le neutralise. KPI~: taux
+d'atteinte du moment \og{}aha\fg{} (carte en ligne + QR code généré) à J+1, cible $>$40\,\%.
 
 \subsection{R4 — Redesign de l'onboarding autour du Time-to-Value (Horizon B)}
 
-\textbf{Diagnostic de référence.} Section~6.
-
-\textbf{Principe.} Restructurer le parcours pour qu'à chaque étape l'utilisateur reçoive
-une valeur intermédiaire tangible, plutôt que de repousser toute la valeur à la fin.
-
-\textbf{Options structurantes (non exclusives).}
-\begin{itemize}[leftmargin=1.5em]
-  \item \textit{Profilage progressif.} N'exiger à la création d'établissement que le nom
-        et le pays (2 champs). Demander adresse, devise et type \textit{au moment où ces
-        informations deviennent nécessaires} (facturation, statistiques géolocalisées).
-  \item \textit{Aperçu immédiat.} Dès l'import de 3 à 5 vins, générer automatiquement un
-        QR code de prévisualisation et envoyer une notification \og{}votre carte est
-        en ligne, voici à quoi elle ressemble sur smartphone\fg{}. Déplace le moment
-        \og{}aha\fg{} au plus tôt.
-  \item \textit{Guide relançable et centre d'aide intégré.} Permettre de rouvrir à tout
-        moment le guide d'onboarding (et ses sections individuelles) et exposer les
-        tutoriels vidéo directement dans l'application. Corrige le point observé du
-        \og{}Ne plus voir l'aide\fg{} non réversible.
-  \item \textit{Distinction entre chatbot FAQ et support humain.} Ajouter une base de
-        connaissances / FAQ structurée avant d'atteindre la messagerie humaine, pour
-        aligner l'attente de l'utilisateur sur la réalité du SLA (l'équipe actuelle ne
-        peut pas tenir une promesse de support temps réel).
-\end{itemize}
-
-\textbf{Effort indicatif.} 4 à 8 semaines-développeur cumulées, priorisables par
-sprint. \textbf{KPI.} Temps médian entre création du compte et génération du premier
-QR code (cible~: $<$30 minutes sur le chemin PDF).
+Le parcours doit être restructuré pour livrer une valeur intermédiaire tangible à chaque étape,
+plutôt que de la repousser à la fin. Quatre axes non exclusifs~: un profilage progressif (à la
+création, n'exiger que nom et pays — le reste étant demandé au moment utile)~; un aperçu
+immédiat (dès trois à cinq vins importés, générer un QR code de prévisualisation et notifier
+\og{}votre carte est en ligne, voici à quoi elle ressemble sur smartphone\fg{})~; un guide
+d'onboarding relançable avec centre d'aide et tutoriels vidéo intégrés (le \og{}Ne plus voir
+l'aide\fg{} actuel n'est pas réversible)~; et une distinction claire entre chatbot FAQ et
+support humain, pour aligner l'attente de l'utilisateur sur le SLA soutenable par l'équipe
+actuelle. Effort cumulé~: quatre à huit semaines-développeur, priorisables par sprint. KPI~:
+temps médian entre création du compte et génération du premier QR code, cible inférieure à
+30 minutes sur le chemin PDF.
 
 \subsection{R5 — Preuve sociale et visibilité des intégrations (Horizon A)}
 
-\textbf{Diagnostic de référence.} Section~5.3 (signaux de confiance faibles).
-
-\textbf{Options (cumulables).}
-\begin{itemize}[leftmargin=1.5em]
-  \item Recueillir et publier 3 à 5 témoignages clients signés (restaurant étoilé, bar
-        à vins, aéroport d'Oslo, bar à tapas de Mons), avec chiffre d'impact lorsque
-        disponible — axe déjà présent sur le Trello du fondateur et à traiter en
-        priorité.
-  \item Afficher les logos des systèmes POS / inventaire compatibles sur la page
-        d'accueil et sur une page \og{}Intégrations\fg{} dédiée. Cette mise en visibilité
-        réduit l'objection \og{}est-ce compatible avec ce que j'utilise déjà~?\fg{}
-  \item Mettre en avant la couverture de la base de données ($\sim$95\,\% des vins
-        commercialisés) et le multilinguisme (7 langues) comme différenciateurs
-        lisibles par un prospect non technique.
-\end{itemize}
-
-\textbf{Effort.} Quelques jours de collecte + intégration front-end. \textbf{KPI.} Taux
-de rebond de la landing page et progression dans le funnel.
+Trois actions cumulables à effort très faible~: recueillir et publier trois à cinq témoignages
+clients signés (restaurant étoilé, bar à vins, aéroport d'Oslo, bar à tapas de Mons), avec
+chiffre d'impact quand disponible — chantier déjà présent sur le Trello du fondateur~;
+afficher les logos des systèmes POS et stock compatibles sur la page d'accueil et sur une
+page \og{}Intégrations\fg{} dédiée, pour désamorcer l'objection de compatibilité~; mettre en
+avant la couverture de la base de données ($\sim$95\,\% des vins commercialisés) et le
+multilinguisme (sept langues) comme différenciateurs lisibles par un prospect non technique.
+Effort~: quelques jours de collecte et d'intégration front-end. KPI~: taux de rebond et
+progression dans le funnel.
 
 \subsection{R6 — Gestion automatisée des échecs de paiement (Horizon B)}
 
-\textbf{Diagnostic de référence.} Cas~7 — gestion automatique des échecs d'abonnement.
-
-Un système de relance est déjà en place via le prestataire de paiement. Pour le
-formaliser~: définir une séquence \textit{dunning} en 3 étapes (J+0 retry automatique,
-J+3 email, J+7 email avec option de mise à jour du moyen de paiement en un clic), et
-un flux \textit{win-back} (J+15 offre ciblée) pour les annulations volontaires.
-Option légère~: configurer un outil tiers comme Stripe Smart Retries ou Chargebee si
-le prestataire actuel ne le propose pas nativement.
-
-\textbf{KPI.} Taux de récupération des paiements échoués (benchmark SaaS~: 30 à 70\,\%
-avec un \textit{dunning} mature).
+Un système de relance existe déjà via le prestataire de paiement~; il s'agit de le formaliser.
+Séquence \textit{dunning} en trois étapes~: J+0 retry automatique, J+3 email de relance, J+7
+email avec mise à jour du moyen de paiement en un clic~; complétée par un flux \textit{win-back}
+à J+15 pour les annulations volontaires. Si le prestataire actuel ne couvre pas ce scénario
+nativement, un outil tiers (Stripe Smart Retries, Chargebee) peut être ajouté à moindre coût.
+KPI~: taux de récupération des paiements échoués (benchmark SaaS~: 30 à 70\,\% avec un
+\textit{dunning} mature).
 
 \subsection{R7 — Système d'alerte précoce de churn (Horizon C)}
 
-\textbf{Diagnostic de référence.} Churn volontaire estimé à 50\,\% des sorties, soit le
-levier directement actionnable.
-
-Définir 3 à 5 indicateurs comportementaux de pré-churn parmi les abonnés payants~:
-baisse du nombre de scans QR par semaine, absence de connexion au back-office depuis
-30~jours, baisse du taux de validation des suggestions du sommelier, absence de mise à
-jour de la carte depuis 60~jours. Déclencher automatiquement soit un email de
-check-in, soit — pour les abonnés annuels à forte valeur — un appel de \textit{customer
-success} du fondateur ou du futur profil commercial.
-
-\textbf{Important.} Cette métrique est à distinguer strictement des indicateurs
-d'activation et de conversion ciblés par R1–R4, qui portent sur la base \textit{non
-payante}. Confondre les deux brouillerait le pilotage.
-
-\textbf{Effort.} Requêtes SQL sur la base existante et intégration à l'outil d'emailing
-déjà en place. \textbf{KPI.} Churn volontaire sur 12 mois (cible~: $-30\,\%$ en deux
-ans).
+Le churn volontaire représente environ la moitié des sorties — le seul levier directement
+actionnable. Définir trois à cinq indicateurs comportementaux de pré-churn sur la base des
+abonnés payants (baisse des scans QR hebdomadaires, absence de connexion au back-office
+depuis 30 jours, baisse du taux de validation des suggestions, carte non mise à jour depuis 60
+jours) et déclencher automatiquement soit un email de \textit{check-in}, soit — pour les
+abonnés annuels à forte valeur — un appel de \textit{customer success} du fondateur ou du
+futur commercial. Cette métrique est à distinguer strictement des indicateurs d'activation et
+de conversion de R1–R4, qui portent sur la base non payante~: les confondre brouillerait le
+pilotage. Effort~: requêtes SQL sur la base existante et intégration à l'outil d'emailing
+déjà en place. KPI~: churn volontaire à 12 mois, cible $-30\,\%$ en deux ans.
 
 \subsection{R8 — Programme de fidélisation et parrainage (Horizon C)}
 
-Plusieurs options complémentaires~: (i)~parrainage client-à-client (un abonné qui
-amène un confrère reçoit un mois offert)~; (ii)~gamification des paliers d'encodage
-pendant la période d'essai (flyers de table offerts au 50\textsuperscript{e} vin
-encodé — option déjà identifiée par le fondateur dans le Cas~5)~; (iii)~programme de
-fidélité pour abonnés annuels (remise sur la deuxième année, accès anticipé aux
-nouvelles fonctionnalités). La littérature SaaS suggère qu'un programme de parrainage
-bien conçu peut générer 10 à 20\,\% des nouvelles acquisitions d'un outil B2B, à coût
-très inférieur à l'outbound.
-
-\textbf{KPI.} Part des nouveaux abonnements issus du parrainage~; taux de
-renouvellement des abonnements annuels.
+Trois options complémentaires~: parrainage client-à-client (un mois offert pour tout abonné
+apportant un confrère)~; gamification des paliers d'encodage pendant l'essai (flyers de table
+offerts au 50\textsuperscript{e} vin encodé — idée déjà identifiée par le fondateur dans le
+Cas~5)~; programme de fidélité pour abonnés annuels (remise sur la deuxième année, accès
+anticipé aux nouvelles fonctionnalités). La littérature SaaS suggère qu'un programme de
+parrainage bien conçu peut générer 10 à 20\,\% des nouvelles acquisitions d'un outil B2B, à
+coût très inférieur à l'outbound. KPI~: part des nouveaux abonnements issus du parrainage et
+taux de renouvellement annuel.
 
 \subsection{R9 — Différenciation défensive face aux substituts (Horizon B)}
 
-\textbf{Diagnostic de référence.} Section~7 (cartographie des substituts).
-
-Face à Somm'it, positionner Winevizer clairement sur \textbf{le segment que le
-concurrent n'adresse pas}~: le petit restaurant et le bar à vins indépendants
-(inférieurs à 100 références), où le sommelier virtuel apporte plus de valeur qu'un
-back-office de gestion de stock avancé. Face à l'IA générative grand public, la
-défense repose sur trois différenciateurs~: (i)~la restriction au stock \textit{réel}
-de l'établissement (ChatGPT peut suggérer un Romanée-Conti que le restaurant n'a
-pas)~; (ii)~la boucle de données comportementales accumulée sur 3 ans~;
-(iii)~l'intégration POS / stock, impossible à répliquer par un assistant généraliste.
-Ces éléments doivent être explicitement mis en avant dans la communication (R1).
-
-Option complémentaire (effort significatif, à arbitrer)~: protection juridique —
-marque déposée Winevizer, dépôt éventuel d'un brevet sur la méthode de recommandation
-contextualisée au stock — pour répondre à la principale crainte du fondateur
-(duplication par IA).
+Face à Somm'it, positionner Winevizer sur le segment non adressé par le concurrent~: le petit
+restaurant et le bar à vins indépendants (moins de 100 références), où le sommelier virtuel
+apporte plus de valeur qu'un back-office de gestion de stock avancé. Face à l'IA générative
+grand public, la défense repose sur trois différenciateurs à exposer explicitement dans la
+communication (R1)~: la restriction au stock réel de l'établissement (ChatGPT peut suggérer
+un Romanée-Conti absent de la cave), la boucle de données comportementales accumulée sur
+trois ans, et l'intégration POS/stock hors de portée d'un assistant généraliste. Option
+complémentaire à arbitrer selon l'effort~: protection juridique (marque déposée, éventuel
+brevet sur la méthode de recommandation contextualisée au stock), qui répond à la crainte
+principale exprimée par le fondateur quant à la duplication par IA.
 
 \subsection{R10 — Boucle de fraude sur l'essai gratuit (Horizon A)}
 
-\textbf{Observation.} Il est actuellement possible de supprimer un compte et de le
-recréer avec la même adresse email, sans traçabilité du fait que celle-ci a déjà
-bénéficié de l'essai gratuit.
-
-\textbf{Options.}
-\begin{itemize}[leftmargin=1.5em]
-  \item \textit{Option A — Marquer l'adresse email (et l'IP, et le nom d'établissement)
-        comme \og{}déjà essayée\fg{} au niveau base de données, indépendamment de la
-        suppression du compte.} Effort minimal, efficace contre l'abus naïf.
-  \item \textit{Option B — Exiger une empreinte de paiement à la création du compte,
-        non débitée pendant l'essai.} Réduit drastiquement la fraude mais introduit une
-        friction supplémentaire au sign-up, à mettre en balance avec R2.
-\end{itemize}
-
-\textbf{KPI.} Nombre de comptes essai par adresse email / établissement (attendu~: 1).
+Il est actuellement possible de supprimer un compte et de le recréer avec la même adresse
+email, sans traçabilité de l'essai déjà consommé. Deux options~: marquer l'adresse email (et
+l'IP, et le nom d'établissement) comme \og{}déjà essayée\fg{} en base, indépendamment de la
+suppression du compte — effort minimal, efficace contre l'abus naïf~; ou exiger une empreinte
+de paiement à la création du compte, non débitée pendant l'essai, qui réduit drastiquement la
+fraude mais introduit une friction au sign-up à mettre en balance avec R2. KPI~: nombre de
+comptes essai par adresse email (attendu~: 1).
 
 \subsection*{Conclusion}
 
-Les recommandations R1 à R5 et R10 — toutes à effort faible et impact majeur — sont
-activables par l'équipe actuelle dans les semaines qui suivent le rendu de ce rapport
-et devraient, à elles seules, déplacer significativement l'indicateur d'activation.
-R4, R6 et R9 s'inscrivent dans le chantier produit du semestre post-passage en
-société, parallèlement au recrutement commercial. R7 et R8 ne prennent leur sens
-qu'une fois la base d'abonnés consolidée — car tenter de réduire le churn avant
-d'avoir fiabilisé l'activation reviendrait à optimiser un entonnoir percé par le haut.
-Cet ordonnancement respecte la logique causale du problème diagnostiqué~: sans
-abonnés, pas de rétention~; sans activation, pas d'abonnés~; sans compréhension de la
-valeur, pas d'activation.
+R1 à R5 et R10 — tous à effort faible et impact majeur — sont activables par l'équipe actuelle
+dans les semaines qui suivent le rendu de ce rapport et devraient, à elles seules, déplacer
+significativement l'indicateur d'activation. R4, R6 et R9 s'inscrivent dans le chantier produit
+du semestre post-passage en société, parallèlement au recrutement commercial. R7 et R8 ne
+prennent leur sens qu'une fois la base d'abonnés consolidée~: tenter de réduire le churn avant
+d'avoir fiabilisé l'activation reviendrait à optimiser un entonnoir percé par le haut. Cet
+ordonnancement respecte la logique causale du problème diagnostiqué~: sans abonnés, pas de
+rétention~; sans activation, pas d'abonnés~; sans compréhension de la valeur, pas d'activation.
 
 \newpage
 \appendix
@@ -797,7 +541,7 @@ et de l'analyse VRIN/VRIO.
   Statut juridique et social       & Startup / PME. Passage en société prévu en T1~2026. Équipe réduite à 2 développeurs en activité complémentaire ; recrutement d'un profil commercial (mi-temps / freelance) planifié pour 2026. \\ \hline
   Modèle économique                & SaaS B2B. Abonnement à 24,99\,€/mois ou 249,90\,€/an par établissement (dégressivité pour les chaînes partageant une même carte). Mois d'essai gratuit sans engagement. \\ \hline
   Marchés principaux               & Benelux et France en priorité. Présence dispersée~: UK, Canada, Danemark, Norvège, Australie, Malte. Trafic américain spontané observé depuis la mise en ligne du site en anglais. \\ \hline
-  Objectifs commerciaux            & 2025 : consolider les 50 clients existants (atteint). 2026 : doubler la base à 100 clients ; premières démarches vers la grande distribution. \\ \hline
+  Objectifs commerciaux            & 2026 : étendre la base à 100 clients ; premières démarches vers la grande distribution. \\ \hline
   Chiffre d'affaires annuel        & $\sim$12\,000\,€. Charges d'exploitation limitées à l'infrastructure IT (hébergement, modèles IA). \\ \hline
   Indicateurs de conversion        & 585 comptes créés depuis le lancement, 62 souscriptions payantes, 45 abonnés actifs (26 mensuels, 19 annuels). Conversion globale $\approx$ 10,6\,\%. Conversion en fin de période d'essai (utilisateurs ayant réellement déployé la carte) : 20 à 25\,\%. \\ \hline
   Taux de churn                    & $\sim$10\,\% sur 3 ans (20 clients perdus sur 62). Estimé à $\sim$50\,\% involontaire (fermeture d'établissement, marchés à faible adoption du QR code) et $\sim$50\,\% volontaire (manque d'usage, outil non prioritaire). \\ \hline
