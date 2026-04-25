@@ -363,25 +363,17 @@ l'utilisateur pourrait compléter plus tard depuis son profil. L'inscription se 
 caractères, en particulier) gagneraient à être affichées avant la saisie plutôt qu'après, afin
 que l'utilisateur les respecte du premier coup au lieu d'avoir à corriger un message d'erreur.
 
-Une option plus structurante consisterait à supprimer purement et simplement le mot de passe à
-cette étape, en s'appuyant sur un mécanisme sans mot de passe~: un magic link envoyé
-par email, un OTP à six chiffres, ou encore une connexion par numéro de téléphone. Cette
-approche est déjà largement utilisée par des solutions non concurrentes comme Slack, Dropbox
-ou Notion, qui proposent une entrée par email puis un code ou un lien de connexion. L'utilisateur
-n'aurait alors qu'un seul champ à remplir et la création du mot de passe peut être différée, voire
-remplacée définitivement par un autre mécanisme.
+Une option plus structurante consisterait à supprimer le mot de passe à cette étape au profit
+d'un mécanisme sans mot de passe~: magic link envoyé par email, OTP à six chiffres, ou connexion
+par numéro de téléphone (approches déjà répandues dans des solutions comme Slack ou Notion).
+L'utilisateur n'aurait alors qu'un seul champ à remplir et la création du mot de passe peut être
+différée, ou remplacée par un autre mécanisme.
 
-Il est également nécessaire de clarifier le statut du lien de confirmation par email. Dans
-l'état actuel, ce lien n'est pas réellement bloquant (l'authentification fonctionne sans
-cliquer dessus), mais l'utilisateur ne le sait pas et attendra le mail avant de poursuivre.
-Si, en plus, il rencontre le bug du lien affiché comme \og{}expiré\fg{} alors qu'il vient
-d'être reçu, peu d'utilisateurs auront le réflexe de retourner manuellement sur l'écran de
-connexion pour vérifier que leur compte est tout de même actif~: ils pourraient juste conclure que
-l'inscription a échoué et abandonner. Deux pistes sont possibles selon la contrainte
-réglementaire à vérifier~: si la confirmation d'email n'est pas légalement obligatoire, la
-supprimer~; si elle l'est, la rendre non bloquante (l'utilisateur entre dans l'application
-immédiatement, le mail sert uniquement de validation a posteriori) et corriger le bug du
-lien expiré.
+Il est également nécessaire de traiter le lien de confirmation par email. L'utilisateur ne sait
+pas que ce lien n'est pas réellement bloquant~: s'il rencontre le bug du lien \og{}expiré\fg{},
+il risque de conclure que l'inscription a échoué et d'abandonner. Selon la contrainte
+réglementaire~: si la confirmation n'est pas légalement obligatoire, la supprimer~; sinon, la
+rendre non bloquante (entrée immédiate dans l'application, validation a posteriori) et corriger le bug.
 
 KPI~: augmentation du taux d'utilisateurs qui accèdent à l'entrée dans l'application.
 
@@ -397,13 +389,10 @@ purement indicatif~; elles n'y conditionnent aucune fonctionnalité. La recomman
 donc de ne conserver que les deux champs essentiels avec éventuellement la possibilité
 de compléter les champs superflus ultérieurement ou de les garder comme optionnels.
 
-Cette analyse est confortée par un constat issu du parcours alternatif décrit dans le
-diagnostic. Lorsque l'utilisateur passe par l'import PDF direct depuis la landing page puis
-finalise son compte, il peut accéder à la page de son établissement et constater que tous les
-champs qui étaient pourtant obligatoires dans la création classique sont vides~; cela ne
-bloque en rien la suite du parcours, pas même la génération du QR code. Autrement dit,
-l'application fonctionne déjà, en pratique, sans ces informations~: leur caractère obligatoire
-dans la création classique n'est qu'une friction, sans contrepartie fonctionnelle.
+Le parcours alternatif le confirme directement~: les champs pourtant obligatoires dans la
+création classique y sont vides sans bloquer la génération du QR code ni aucune autre
+fonctionnalité. L'application fonctionne déjà sans ces informations~: leur caractère obligatoire
+n'est qu'une friction sans contrepartie fonctionnelle.
 
 KPI~: augmentation du taux d'utilisateurs qui passent de l'entrée dans l'application à la
 création effective de l'établissement.
@@ -426,14 +415,11 @@ On pourrait envisager de le mettre plus en avant sur la landing page, voire d'en
 d'entrée principal. Cette logique prolonge directement R2 et R3~: moins de champs, entrée plus
 rapide dans la valeur.
 
-Il resterait toutefois à corriger la fragilité identifiée dans la phase de finalisation de ce
-parcours. Actuellement, une fois la carte traitée, l'utilisateur reçoit un email contenant l'unique
-lien d'accès à son compte~; si cet email atterrit dans les indésirables ou est supprimé par
-mégarde, l'import et le délai d'attente ont été consentis pour rien. Une solution simple
-consisterait à rediriger l'utilisateur directement vers le tableau de bord à l'issue du
-traitement, en l'authentifiant automatiquement, sans dépendre du lien email. Cette approche
-est cohérente avec la logique sans mot de passe évoquée en R2 et supprimerait ce point de
-rupture.
+Il resterait toutefois à corriger la fragilité de la phase de finalisation~: le lien email est
+l'unique porte d'accès au compte, et sa suppression accidentelle invalide l'import et le délai
+consentis. Une redirection automatique vers l'application en attendant le traitement du document,
+sans dépendre du lien email, supprimerait ce point de rupture, cela est cohérent avec la logique
+sans mot de passe évoquée en R2.
 
 KPI~: augmentation du taux d'utilisateurs qui atteignent l'encodage de la carte des vins
 complété.
