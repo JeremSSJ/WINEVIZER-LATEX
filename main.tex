@@ -434,6 +434,32 @@ récurrentes (import de carte, génération du QR code, gestion des stocks) et r
 un support humain pour les cas plus complexes ou sur demande explicite, avec indication du
 délai attendu.
 
+\subsection{R6 — Corriger le bug d'import CSV qui ignore la première ligne}
+
+Un bug a été identifié lors des tests d'import par fichier CSV, y compris avec le fichier
+d'exemple fourni par Winevizer~: la première ligne est systématiquement ignorée par le
+convertisseur. Sur un fichier de six vins, seuls cinq sont importés, sans message d'erreur ni
+avertissement. L'utilisateur se retrouve avec une carte incomplète, peut-être même
+sans en avoir conscience directement s'il y a de nombreux vins.
+Ce comportement est caractéristique d'un convertisseur qui traite la première ligne comme un
+en-tête quel que soit son contenu~; une correction consisterait à proposer une case à cocher lors 
+de l'import pour indiquer si le fichier contient une ligne d'en-tête~: si oui, 
+la première ligne est ignorée, sinon elle est importée comme un vin.
+
+\subsection{R7 — Prévenir l'abus de la période d'essai}
+
+Ce conseil dépasse le périmètre de l'onboarding, mais la faille mérite d'être signalée.
+Le scénario est simple~: un utilisateur consomme intégralement son mois d'essai gratuit,
+supprime son compte, en recrée un avec la même adresse email, réimporte sa carte des vins
+et repart pour un nouveau mois d'essai. Aucune traçabilité n'empêche aujourd'hui cette
+manipulation~: côté base de données, la suppression du compte efface toute mémoire de l'essai
+précédent, comme si l'utilisateur se présentait pour la première fois.
+
+Une correction d'effort minimal consisterait à conserver en base, indépendamment de la
+suppression du compte, un marqueur associant l'adresse email et éventuellement l'adresse
+IP à un essai déjà utilisé. Ce marqueur persistant suffit à bloquer toute réactivation
+naïve de la période d'essai par les mêmes identifiants.
+
 \newpage
 \appendix
 \pagestyle{empty}

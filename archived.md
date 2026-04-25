@@ -85,15 +85,8 @@ complémentaire à arbitrer selon l'effort~: protection juridique (marque dépos
 brevet sur la méthode de recommandation contextualisée au stock), qui répond à la crainte
 principale exprimée par le fondateur quant à la duplication par IA.
 
-\subsection{R9 — Boucle de fraude sur l'essai gratuit}
 
-Il est actuellement possible de supprimer un compte et de le recréer avec la même adresse
-email, sans traçabilité de l'essai déjà consommé. Deux options~: marquer l'adresse email (et
-l'IP, et le nom d'établissement) comme \og{}déjà essayée\fg{} en base, indépendamment de la
-suppression du compte (effort minimal, efficace contre l'abus naïf)~; ou exiger une empreinte
-de paiement à la création du compte, non débitée pendant l'essai, qui réduit drastiquement la
-fraude mais introduit une friction au sign-up à mettre en balance avec R2. KPI~: nombre de
-comptes essai par adresse email (attendu~: 1).
+
 
 \subsection*{Conclusion}
 
