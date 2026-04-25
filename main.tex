@@ -377,7 +377,20 @@ rendre non bloquante (entrée immédiate dans l'application, validation a poster
 
 KPI~: augmentation du taux d'utilisateurs qui accèdent à l'entrée dans l'application.
 
-\subsection{R3 — Alléger la création de l'établissement}
+\subsection{R3 — Éviter les reconnexions systématiques après fermeture de la page}
+
+Un point de friction supplémentaire mérite d'être traité~: lorsqu'un utilisateur est déjà
+connecté, la fermeture de l'onglet ou du navigateur entraîne une déconnexion apparente, et
+il doit se reconnecter à chaque retour. Pour un restaurateur en service, ce comportement peut 
+être perçu comme pénible et peut dégrader l'usage quotidien de l'outil.
+
+Il serait pertinent d'introduire une persistance de session via cookie sécurisé afin de
+restaurer automatiquement la connexion pendant une durée définie (par exemple 7 à 30 jours),
+sauf déconnexion volontaire.
+
+KPI~: diminution du taux de reconnexion forcée.
+
+\subsection{R4 — Alléger la création de l'établissement}
 
 Lorsque l'utilisateur crée un établissement, que ce soit lors de l'onboarding ou
 ultérieurement, il doit renseigner huit champs obligatoires~: nom, type, rue, numéro /
@@ -397,7 +410,7 @@ n'est qu'une friction sans contrepartie fonctionnelle.
 KPI~: augmentation du taux d'utilisateurs qui passent de l'entrée dans l'application à la
 création effective de l'établissement.
 
-\subsection{R4 — Lever le paywall sur l'import PDF et rationaliser les parcours d'entrée}
+\subsection{R5 — Lever le paywall sur l'import PDF et rationaliser les parcours d'entrée}
 
 Le diagnostic a mis en évidence une incohérence difficilement justifiable~: l'import de la carte
 par PDF ou photo est verrouillé derrière le paywall dans le parcours classique, alors qu'il est
@@ -424,7 +437,7 @@ sans mot de passe évoquée en R2.
 KPI~: augmentation du taux d'utilisateurs qui atteignent l'encodage de la carte des vins
 complété.
 
-\subsection{R5 — Transformer le chatbot en véritable canal de support}
+\subsection{R6 — Transformer le chatbot en véritable canal de support}
 
 L'application intègre une interface de type chatbot qui laisse attendre une réponse
 immédiate~; en réalité, le message est simplement transmis au support, qui répond par email
@@ -434,7 +447,7 @@ récurrentes (import de carte, génération du QR code, gestion des stocks) et r
 un support humain pour les cas plus complexes ou sur demande explicite, avec indication du
 délai attendu.
 
-\subsection{R6 — Corriger le bug d'import CSV qui ignore la première ligne}
+\subsection{R7 — Corriger le bug d'import CSV qui ignore la première ligne}
 
 Un bug a été identifié lors des tests d'import par fichier CSV, y compris avec le fichier
 d'exemple fourni par Winevizer~: la première ligne est systématiquement ignorée par le
@@ -446,7 +459,7 @@ en-tête quel que soit son contenu~; une correction consisterait à proposer une
 de l'import pour indiquer si le fichier contient une ligne d'en-tête~: si oui, 
 la première ligne est ignorée, sinon elle est importée comme un vin.
 
-\subsection{R7 — Prévenir l'abus de la période d'essai}
+\subsection{R8 — Prévenir l'abus de la période d'essai}
 
 Ce conseil dépasse le périmètre de l'onboarding, mais la faille mérite d'être signalée.
 Le scénario est simple~: un utilisateur consomme intégralement son mois d'essai gratuit,
