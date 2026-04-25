@@ -365,8 +365,10 @@ que l'utilisateur les respecte du premier coup au lieu d'avoir à corriger un me
 
 Une option plus structurante consisterait à supprimer purement et simplement le mot de passe à
 cette étape, en s'appuyant sur un mécanisme sans mot de passe~: un magic link envoyé
-par email, un OTP à six chiffres, ou encore une connexion par numéro de téléphone. L'utilisateur
-n'a alors qu'un seul champ à remplir et la création du mot de passe peut être différée, voire
+par email, un OTP à six chiffres, ou encore une connexion par numéro de téléphone. Cette
+approche est déjà largement utilisée par des solutions non concurrentes comme Slack, Dropbox
+ou Notion, qui proposent une entrée par email puis un code ou un lien de connexion. L'utilisateur
+n'aurait alors qu'un seul champ à remplir et la création du mot de passe peut être différée, voire
 remplacée définitivement par un autre mécanisme.
 
 Il est également nécessaire de clarifier le statut du lien de confirmation par email. Dans
@@ -381,8 +383,10 @@ supprimer~; si elle l'est, la rendre non bloquante (l'utilisateur entre dans l'a
 immédiatement, le mail sert uniquement de validation a posteriori) et corriger le bug du
 lien expiré.
 
-KPI~: réduction du taux d'abandon entre la création du compte et la première
-entrée dans l'application.
+KPI~: augmentation du taux d'utilisateurs qui accèdent à l'entrée dans l'application.
+
+
+
 
 \newpage
 \appendix
