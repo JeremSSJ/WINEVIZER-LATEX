@@ -405,8 +405,38 @@ bloque en rien la suite du parcours, pas même la génération du QR code. Autre
 l'application fonctionne déjà, en pratique, sans ces informations~: leur caractère obligatoire
 dans la création classique n'est qu'une friction, sans contrepartie fonctionnelle.
 
+KPI~: augmentation du taux d'utilisateurs qui passent de l'entrée dans l'application à la
+création effective de l'établissement.
 
+\subsection{R4 — Lever le paywall sur l'import PDF et rationaliser les parcours d'entrée}
 
+Le diagnostic a mis en évidence une incohérence difficilement justifiable~: l'import de la carte
+par PDF ou photo est verrouillé derrière le paywall dans le parcours classique, alors qu'il est
+librement accessible depuis la landing page via le parcours alternatif. C'est pourtant la
+méthode la plus naturelle pour un restaurateur qui dispose déjà d'une carte papier, et donc
+celle qui réduit au maximum la friction à l'encodage. La bloquer durant la période d'essai
+revient à contraindre l'utilisateur à recourir aux méthodes les plus longues au moment précis
+où il évalue si l'outil vaut son temps. Le fondateur a lui-même indiqué envisager d'étendre
+cet accès à tous les utilisateurs gratuits~: cette décision mérite d'être accélérée.
+
+Au-delà du paywall, le parcours alternatif mérite une réflexion plus large. En ne demandant
+qu'une adresse email, un nom d'établissement et un fichier, il génère nettement moins de
+friction que le parcours classique et s'aligne davantage sur le problème concret du restaurateur.
+On pourrait envisager de le mettre plus en avant sur la landing page, voire d'en faire le point
+d'entrée principal. Cette logique prolonge directement R2 et R3~: moins de champs, entrée plus
+rapide dans la valeur.
+
+Il resterait toutefois à corriger la fragilité identifiée dans la phase de finalisation de ce
+parcours. Actuellement, une fois la carte traitée, l'utilisateur reçoit un email contenant l'unique
+lien d'accès à son compte~; si cet email atterrit dans les indésirables ou est supprimé par
+mégarde, l'import et le délai d'attente ont été consentis pour rien. Une solution simple
+consisterait à rediriger l'utilisateur directement vers le tableau de bord à l'issue du
+traitement, en l'authentifiant automatiquement, sans dépendre du lien email. Cette approche
+est cohérente avec la logique sans mot de passe évoquée en R2 et supprimerait ce point de
+rupture.
+
+KPI~: augmentation du taux d'utilisateurs qui atteignent l'encodage de la carte des vins
+complété.
 
 \newpage
 \appendix
