@@ -385,6 +385,25 @@ lien expiré.
 
 KPI~: augmentation du taux d'utilisateurs qui accèdent à l'entrée dans l'application.
 
+\subsection{R3 — Alléger la création de l'établissement}
+
+Lorsque l'utilisateur crée un établissement, que ce soit lors de l'onboarding ou
+ultérieurement, il doit renseigner huit champs obligatoires~: nom, type, rue, numéro /
+boîte, pays, devise, ville et code postal. On peut légitimement s'interroger sur la
+nécessité de demander autre chose que le nom et le type. On pourrait supposer que ces
+informations servent à la facturation, mais l'examen du parcours montre qu'il n'en est
+rien~: aucune fonctionnalité ne s'appuie réellement sur ces données. La recommandation est
+donc de ne conserver que les deux champs essentiels et d'éventuellement laisser l'utilisateur compléter
+le reste depuis les paramètres de son compte.
+
+Cette analyse est confortée par un constat issu du parcours alternatif décrit dans le
+diagnostic. Lorsque l'utilisateur passe par l'import PDF direct depuis la landing page puis
+finalise son compte, il peut accéder à la page de son établissement et constater que tous les
+champs qui étaient pourtant obligatoires dans la création classique sont vides~; cela ne
+bloque en rien la suite du parcours, pas même la génération du QR code. Autrement dit,
+l'application fonctionne déjà, en pratique, sans ces informations~: leur caractère obligatoire
+dans la création classique n'est qu'une friction, sans contrepartie fonctionnelle.
+
 
 
 
