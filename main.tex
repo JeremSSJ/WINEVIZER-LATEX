@@ -327,7 +327,7 @@ Les recommandations ci-dessous sont des pistes, non des prescriptions. Il appart
 fondateur de juger, pour chacune, si elle est pertinente dans son contexte, comment la mettre
 en œuvre, et avec lesquelles d'autres la combiner.
 
-\subsection{R1 — Refondre la landing page~: ROI, preuve sociale et intégrations}
+\subsection{R1 — Recentrer le discours de la landing page sur le ROI}
 
 Pour pallier le décalage de discours en haut du funnel, il serait intéressant de recentrer
 les bénéfices mis en avant sur l'impact métier. Là où Somm'it annonce \og{}Gagnez trois points
@@ -339,20 +339,22 @@ ces bénéfices en termes de ROI, par exemple \og{}+15\,\% de CA vins, sans recr
 sommelier\fg{}, et les appuyer sur les données d'usage internes à anonymiser, poserait d'emblée
 ce cadre.
 
-Il s'agirait ensuite de renforcer la preuve sociale, levier déjà exploité par les concurrents.
+\subsection{R2 — Renforcer la preuve sociale sur la landing page}
+
+Il s'agirait de renforcer la preuve sociale, levier déjà exploité par les concurrents.
 Publier trois à cinq témoignages clients signés, comme par exemple celui du bar à tapas de Mons,
 en y joignant les chiffres d'impact disponibles, permettrait de crédibiliser la promesse.
 Sortir par ailleurs la mention des partenaires du pied de page, où ils passent inaperçus, pour
 les afficher en position prominente sur la page d'accueil rendrait ces signaux immédiatement
 visibles au prospect.
 
+\subsection{R3 — Afficher les intégrations POS sur la landing page}
+
 Dans la même logique, et là encore à l'image des concurrents, afficher les logos des systèmes
 POS et stock compatibles sur la page d'accueil et créer une page \og{}Intégrations\fg{} dédiée
 permettrait de désamorcer l'objection de compatibilité avant même l'inscription.
 
-KPI~: augmentation du taux de progression dans le funnel.
-
-\subsection{R2 — Simplifier le parcours d'inscription}
+\subsection{R4 — Alléger les champs et l'UX du formulaire d'inscription}
 Plusieurs leviers peuvent alléger l'étape d'inscription telle qu'elle a été décrite dans
 le diagnostic. Sur la création de compte classique, il serait d'abord pertinent de retirer
 les champs Prénom et Nom, qui ne sont d'aucune utilité immédiate pour activer l'outil et que
@@ -362,6 +364,8 @@ l'utilisateur pourrait compléter plus tard depuis son profil. L'inscription se 
 à l'utilisateur de vérifier sa saisie. Les règles de validité (longueur minimale de 8
 caractères, en particulier) gagneraient à être affichées avant la saisie plutôt qu'après, afin
 que l'utilisateur les respecte du premier coup au lieu d'avoir à corriger un message d'erreur.
+
+\subsection{R5 — Adopter un mécanisme d'authentification sans friction}
 
 Une option plus structurante consisterait à supprimer le mot de passe à cette étape au profit
 d'un mécanisme sans mot de passe~: magic link envoyé par email, OTP à six chiffres, ou connexion
@@ -375,9 +379,7 @@ il risque de conclure que l'inscription a échoué et d'abandonner. Selon la con
 réglementaire~: si la confirmation n'est pas légalement obligatoire, la supprimer~; sinon, la
 rendre non bloquante (entrée immédiate dans l'application, validation a posteriori) et corriger le bug.
 
-KPI~: augmentation du taux d'utilisateurs qui accèdent à l'entrée dans l'application.
-
-\subsection{R3 — Éviter les reconnexions systématiques après fermeture de la page}
+\subsection{R6 — Éviter les reconnexions systématiques après fermeture de la page}
 
 Un point de friction supplémentaire mérite d'être traité~: lorsqu'un utilisateur est déjà
 connecté, la fermeture de l'onglet ou du navigateur entraîne une déconnexion apparente, et
@@ -388,9 +390,7 @@ Il serait pertinent d'introduire une persistance de session via cookie sécuris�
 restaurer automatiquement la connexion pendant une durée définie (par exemple 7 à 30 jours),
 sauf déconnexion volontaire.
 
-KPI~: diminution du taux de reconnexion forcée.
-
-\subsection{R4 — Alléger la création de l'établissement}
+\subsection{R7 — Alléger la création de l'établissement}
 
 Lorsque l'utilisateur crée un établissement, que ce soit lors de l'onboarding ou
 ultérieurement, il doit renseigner huit champs obligatoires~: nom, type, rue, numéro /
@@ -407,10 +407,7 @@ création classique y sont vides sans bloquer la génération du QR code ni aucu
 fonctionnalité. L'application fonctionne déjà sans ces informations~: leur caractère obligatoire
 n'est qu'une friction sans contrepartie fonctionnelle.
 
-KPI~: augmentation du taux d'utilisateurs qui passent de l'entrée dans l'application à la
-création effective de l'établissement.
-
-\subsection{R5 — Lever le paywall sur l'import PDF et rationaliser les parcours d'entrée}
+\subsection{R8 — Lever le paywall sur l'import PDF}
 
 Le diagnostic a mis en évidence une incohérence difficilement justifiable~: l'import de la carte
 par PDF ou photo est verrouillé derrière le paywall dans le parcours classique, alors qu'il est
@@ -421,33 +418,32 @@ revient à contraindre l'utilisateur à recourir aux méthodes les plus longues 
 où il évalue si l'outil vaut son temps. Le fondateur a lui-même indiqué envisager d'étendre
 cet accès à tous les utilisateurs gratuits~: cette décision mérite d'être accélérée.
 
+\subsection{R9 — Rationaliser le parcours alternatif et corriger sa fragilité}
+
 Au-delà du paywall, le parcours alternatif mérite une réflexion plus large. En ne demandant
 qu'une adresse email, un nom d'établissement et un fichier, il génère nettement moins de
 friction que le parcours classique et s'aligne davantage sur le problème concret du restaurateur.
 On pourrait envisager de le mettre plus en avant sur la landing page, voire d'en faire le point
-d'entrée principal. Cette logique prolonge directement R2 et R3~: moins de champs, entrée plus
+d'entrée principal. Cette logique prolonge directement R4 et R5~: moins de champs, entrée plus
 rapide dans la valeur.
 
 Il resterait toutefois à corriger la fragilité de la phase de finalisation~: le lien email est
 l'unique porte d'accès au compte, et sa suppression accidentelle invalide l'import et le délai
 consentis. Une redirection automatique vers l'application en attendant le traitement du document,
 sans dépendre du lien email, supprimerait ce point de rupture, cela est cohérent avec la logique
-sans mot de passe évoquée en R2.
+sans mot de passe évoquée en R5.
 
-KPI~: augmentation du taux d'utilisateurs qui atteignent l'encodage de la carte des vins
-complété.
-
-\subsection{R6 — Transformer le chatbot en véritable canal de support}
+\subsection{R10 — Transformer le chatbot en véritable canal de support}
 
 L'application intègre une interface de type chatbot qui laisse attendre une réponse
 immédiate~; en réalité, le message est simplement transmis au support, qui répond par email
 ultérieurement. Ce décalage est particulièrement dommageable aux moments de blocage.
 Il serait pertinent de configurer cet outil pour qu'il réponde automatiquement aux questions
-récurrentes (import de carte, génération du QR code, gestion des stocks) et redirige vers
+récurrentes (import de carte, génération du QR code, gestion des vins) et redirige vers
 un support humain pour les cas plus complexes ou sur demande explicite, avec indication du
 délai attendu.
 
-\subsection{R7 — Corriger le bug d'import CSV qui ignore la première ligne}
+\subsection{R11 — Corriger le bug d'import CSV}
 
 Un bug a été identifié lors des tests d'import par fichier CSV, y compris avec le fichier
 d'exemple fourni par Winevizer~: la première ligne est systématiquement ignorée par le
@@ -459,7 +455,7 @@ en-tête quel que soit son contenu~; une correction consisterait à proposer une
 de l'import pour indiquer si le fichier contient une ligne d'en-tête~: si oui, 
 la première ligne est ignorée, sinon elle est importée comme un vin.
 
-\subsection{R8 — Prévenir l'abus de la période d'essai}
+\subsection{R12 — Prévenir l'abus de la période d'essai}
 
 Ce conseil dépasse le périmètre de l'onboarding, mais la faille mérite d'être signalée.
 Le scénario est simple~: un utilisateur consomme intégralement son mois d'essai gratuit,
