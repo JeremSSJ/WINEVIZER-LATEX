@@ -352,7 +352,18 @@ Dans la même logique, et là encore à l'image des concurrents, afficher les lo
 POS et stock compatibles sur la page d'accueil et créer une page \og{}Intégrations\fg{} dédiée
 permettrait de désamorcer l'objection de compatibilité avant même l'inscription.
 
-\subsection{R4 — Alléger les champs et l'UX du formulaire d'inscription}
+\subsection{R4 — Corriger les défauts visuels de la landing page}
+
+D'une part, plusieurs éléments graphiques de la page apparaissent brusquement à leur
+premier chargement~: l'aperçu des versions smartphone et tablette de la carte lors des
+transitions, mais aussi le logo Winevizer et les icônes de drapeaux de langue (entre autres) lors
+du rechargement de la page. D'autre part, la vidéo de
+présentation dans la partie \og{}Vidéos \& Tutoriels\fg{} déborde des limites visibles de l'écran. Apporter
+des corrections à ces problèmes est quelque chose de
+rapide à réaliser, mais leur absence actuelle donne une impression peu professionnelle
+susceptible d'entamer la confiance du prospect avant même l'inscription.
+
+\subsection{R5 — Alléger les champs et l'UX du formulaire d'inscription}
 Plusieurs leviers peuvent alléger l'étape d'inscription telle qu'elle a été décrite dans
 le diagnostic. Sur la création de compte classique, il serait d'abord pertinent de retirer
 les champs Prénom et Nom, qui ne sont d'aucune utilité immédiate pour activer l'outil et que
@@ -363,7 +374,7 @@ l'utilisateur pourrait compléter plus tard depuis son profil. L'inscription se 
 caractères, en particulier) gagneraient à être affichées avant la saisie plutôt qu'après, afin
 que l'utilisateur les respecte du premier coup au lieu d'avoir à corriger un message d'erreur.
 
-\subsection{R5 — Adopter un mécanisme d'authentification sans friction}
+\subsection{R6 — Adopter un mécanisme d'authentification sans friction}
 
 Une option plus structurante consisterait à supprimer le mot de passe à cette étape au profit
 d'un mécanisme sans mot de passe~: magic link envoyé par email, OTP à six chiffres, ou connexion
@@ -377,7 +388,7 @@ il risque de conclure que l'inscription a échoué et d'abandonner. Selon la con
 réglementaire~: si la confirmation n'est pas légalement obligatoire, la supprimer~; sinon, la
 rendre non bloquante (entrée immédiate dans l'application, validation a posteriori) et corriger le bug.
 
-\subsection{R6 — Éviter les reconnexions systématiques après fermeture de la page}
+\subsection{R7 — Éviter les reconnexions systématiques après fermeture de la page}
 
 Un point de friction supplémentaire mérite d'être traité~: lorsqu'un utilisateur est déjà
 connecté, la fermeture de l'onglet ou du navigateur entraîne une déconnexion apparente, et
@@ -388,7 +399,7 @@ Il serait pertinent d'introduire une persistance de session via cookie sécuris�
 restaurer automatiquement la connexion pendant une durée définie (par exemple 7 à 30 jours),
 sauf déconnexion volontaire.
 
-\subsection{R7 — Alléger la création de l'établissement}
+\subsection{R8 — Alléger la création de l'établissement}
 
 Lorsque l'utilisateur crée un établissement, que ce soit lors de l'onboarding ou
 ultérieurement, il doit renseigner huit champs obligatoires~: nom, type, rue, numéro /
@@ -405,7 +416,7 @@ création classique y sont vides sans bloquer la génération du QR code ni aucu
 fonctionnalité. L'application fonctionne déjà sans ces informations~: leur caractère obligatoire
 n'est qu'une friction sans contrepartie fonctionnelle.
 
-\subsection{R8 — Lever le paywall sur l'import PDF}
+\subsection{R9 — Lever le paywall sur l'import PDF}
 
 Le diagnostic a mis en évidence une incohérence difficilement justifiable~: l'import de la carte
 par PDF ou photo est verrouillé derrière le paywall dans le parcours classique, alors qu'il est
@@ -416,7 +427,7 @@ revient à contraindre l'utilisateur à recourir aux méthodes les plus longues 
 où il évalue si l'outil vaut son temps. Le fondateur a lui-même indiqué envisager d'étendre
 cet accès à tous les utilisateurs gratuits~: cette décision mérite d'être accélérée.
 
-\subsection{R9 — Rationaliser le parcours alternatif et corriger sa fragilité}
+\subsection{R10 — Rationaliser le parcours alternatif et corriger sa fragilité}
 
 Au-delà du paywall, le parcours alternatif mérite une réflexion plus large. En ne demandant
 qu'une adresse email, un nom d'établissement et un fichier, il génère nettement moins de
@@ -431,7 +442,7 @@ consentis. Une redirection automatique vers l'application en attendant le traite
 sans dépendre du lien email, supprimerait ce point de rupture, cela est cohérent avec la logique
 sans mot de passe évoquée en R5.
 
-\subsection{R10 — Transformer le chatbot en véritable canal de support}
+\subsection{R11 — Transformer le chatbot en véritable canal de support}
 
 L'application intègre une interface de type chatbot qui laisse attendre une réponse
 immédiate~; en réalité, le message est simplement transmis au support, qui répond par email
@@ -441,7 +452,7 @@ récurrentes (import de carte, génération du QR code, gestion des vins) et red
 un support humain pour les cas plus complexes ou sur demande explicite, avec indication du
 délai attendu.
 
-\subsection{R11 — Corriger le bug d'import CSV}
+\subsection{R12 — Corriger le bug d'import CSV}
 
 Un bug a été identifié lors des tests d'import par fichier CSV, y compris avec le fichier
 d'exemple fourni par Winevizer~: la première ligne est systématiquement ignorée par le
@@ -453,7 +464,7 @@ en-tête quel que soit son contenu~; une correction consisterait à proposer une
 de l'import pour indiquer si le fichier contient une ligne d'en-tête~: si oui, 
 la première ligne est ignorée, sinon elle est importée comme un vin.
 
-\subsection{R12 — Prévenir l'abus de la période d'essai}
+\subsection{R13 — Prévenir l'abus de la période d'essai}
 
 Ce conseil dépasse le périmètre de l'onboarding, mais la faille mérite d'être signalée.
 Le scénario est simple~: un utilisateur consomme intégralement son mois d'essai gratuit,
