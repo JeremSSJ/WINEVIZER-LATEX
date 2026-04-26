@@ -373,7 +373,22 @@ clique pas sur ces onglets ne les verra jamais. La recommandation est donc de su
 sous-pages et de rapatrier leurs contenus utiles (indicateurs de ROI, témoignages) directement
 en section principale de la page d'accueil, conformément à R1 et R2.
 
-\subsection{R6 — Alléger les champs et l'UX du formulaire d'inscription}
+\subsection{R6 — Simplifier la présentation des tarifs}
+
+Une amélioration simple consisterait à refondre les tableaux tarifaires, qui paraissent aujourd'hui
+chargés en raison d'informations répétitives. Une présentation plus lisible pourrait reprendre, en
+lignes, les fonctionnalités proposées, et, en colonnes, les trois formules \og{}gratuit\fg{},
+\og{}mensuel\fg{} et \og{}annuel\fg{}, avec par exemple un symbole de type V ou X pour indiquer si chaque
+fonction est incluse. Cette structure réduirait la charge cognitive du prospect au moment où il
+compare les offres.
+
+Le plan annuel devrait également afficher explicitement l'économie réalisée~: payer 249,90\,€ par an
+au lieu de 299,88\,€ en mensualisé, soit 49,98\,€ d'économie. Formuler ce gain directement sur la page
+(par exemple \og{}Choisissez le plan annuel à 249,90\,€ et économisez 49,98\,€ par an\fg{}) permettrait
+de cadrer l'offre annuelle comme une bonne affaire et
+d'orienter davantage de prospects vers la formule la plus engageante.
+
+\subsection{R7 — Alléger les champs et l'UX du formulaire d'inscription}
 Plusieurs leviers peuvent alléger l'étape d'inscription telle qu'elle a été décrite dans
 le diagnostic. Sur la création de compte classique, il serait d'abord pertinent de retirer
 les champs Prénom et Nom, qui ne sont d'aucune utilité immédiate pour activer l'outil et que
@@ -384,7 +399,7 @@ l'utilisateur pourrait compléter plus tard depuis son profil. L'inscription se 
 caractères, en particulier) gagneraient à être affichées avant la saisie plutôt qu'après, afin
 que l'utilisateur les respecte du premier coup au lieu d'avoir à corriger un message d'erreur.
 
-\subsection{R7 — Adopter un mécanisme d'authentification sans friction}
+\subsection{R8 — Adopter un mécanisme d'authentification sans friction}
 
 Une option plus structurante consisterait à supprimer le mot de passe à cette étape au profit
 d'un mécanisme sans mot de passe~: magic link envoyé par email, OTP à six chiffres, ou connexion
@@ -398,7 +413,7 @@ il risque de conclure que l'inscription a échoué et d'abandonner. Selon la con
 réglementaire~: si la confirmation n'est pas légalement obligatoire, la supprimer~; sinon, la
 rendre non bloquante (entrée immédiate dans l'application, validation a posteriori) et corriger le bug.
 
-\subsection{R8 — Éviter les reconnexions systématiques après fermeture de la page}
+\subsection{R9 — Éviter les reconnexions systématiques après fermeture de la page}
 
 Un point de friction supplémentaire mérite d'être traité~: lorsqu'un utilisateur est déjà
 connecté, la fermeture de l'onglet ou du navigateur entraîne une déconnexion apparente, et
@@ -409,7 +424,7 @@ Il serait pertinent d'introduire une persistance de session via cookie sécuris�
 restaurer automatiquement la connexion pendant une durée définie (par exemple 7 à 30 jours),
 sauf déconnexion volontaire.
 
-\subsection{R9 — Alléger la création de l'établissement}
+\subsection{R10 — Alléger la création de l'établissement}
 
 Lorsque l'utilisateur crée un établissement, que ce soit lors de l'onboarding ou
 ultérieurement, il doit renseigner huit champs obligatoires~: nom, type, rue, numéro /
@@ -426,7 +441,7 @@ création classique y sont vides sans bloquer la génération du QR code ni aucu
 fonctionnalité. L'application fonctionne déjà sans ces informations~: leur caractère obligatoire
 n'est qu'une friction sans contrepartie fonctionnelle.
 
-\subsection{R10 — Lever le paywall sur l'import PDF}
+\subsection{R11 — Lever le paywall sur l'import PDF}
 
 Le diagnostic a mis en évidence une incohérence difficilement justifiable~: l'import de la carte
 par PDF ou photo est verrouillé derrière le paywall dans le parcours classique, alors qu'il est
@@ -437,22 +452,22 @@ revient à contraindre l'utilisateur à recourir aux méthodes les plus longues 
 où il évalue si l'outil vaut son temps. Le fondateur a lui-même indiqué envisager d'étendre
 cet accès à tous les utilisateurs gratuits~: cette décision mérite d'être accélérée.
 
-\subsection{R11 — Rationaliser le parcours alternatif et corriger sa fragilité}
+\subsection{R12 — Rationaliser le parcours alternatif et corriger sa fragilité}
 
 Au-delà du paywall, le parcours alternatif mérite une réflexion plus large. En ne demandant
 qu'une adresse email, un nom d'établissement et un fichier, il génère nettement moins de
 friction que le parcours classique et s'aligne davantage sur le problème concret du restaurateur.
 On pourrait envisager de le mettre plus en avant sur la landing page, voire d'en faire le point
-d'entrée principal. Cette logique prolonge directement R6 et R7~: moins de champs, entrée plus
+d'entrée principal. Cette logique prolonge directement R7 et R8~: moins de champs, entrée plus
 rapide dans la valeur.
 
 Il resterait toutefois à corriger la fragilité de la phase de finalisation~: le lien email est
 l'unique porte d'accès au compte, et sa suppression accidentelle invalide l'import et le délai
 consentis. Une redirection automatique vers l'application en attendant le traitement du document,
 sans dépendre du lien email, supprimerait ce point de rupture, cela est cohérent avec la logique
-sans mot de passe évoquée en R7.
+sans mot de passe évoquée en R8.
 
-\subsection{R12 — Transformer le chatbot en véritable canal de support}
+\subsection{R13 — Transformer le chatbot en véritable canal de support}
 
 L'application intègre une interface de type chatbot qui laisse attendre une réponse
 immédiate~; en réalité, le message est simplement transmis au support, qui répond par email
@@ -462,7 +477,7 @@ récurrentes (import de carte, génération du QR code, gestion des vins) et red
 un support humain pour les cas plus complexes ou sur demande explicite, avec indication du
 délai attendu.
 
-\subsection{R13 — Corriger le bug d'import CSV}
+\subsection{R14 — Corriger le bug d'import CSV}
 
 Un bug a été identifié lors des tests d'import par fichier CSV, y compris avec le fichier
 d'exemple fourni par Winevizer~: la première ligne est systématiquement ignorée par le
@@ -474,7 +489,7 @@ en-tête quel que soit son contenu~; une correction consisterait à proposer une
 de l'import pour indiquer si le fichier contient une ligne d'en-tête~: si oui, 
 la première ligne est ignorée, sinon elle est importée comme un vin.
 
-\subsection{R14 — Prévenir l'abus de la période d'essai}
+\subsection{R15 — Prévenir l'abus de la période d'essai}
 
 Ce conseil dépasse le périmètre de l'onboarding, mais la faille mérite d'être signalée.
 Le scénario est simple~: un utilisateur consomme intégralement son mois d'essai gratuit,
