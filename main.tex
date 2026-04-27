@@ -113,8 +113,7 @@ conversion global d'environ 10,6\,\%. La majorité des utilisateurs abandonnent 
 parcours, avant même d'avoir expérimenté le sommelier virtuel.
 
 La fiche d'identité complète de Winevizer (statut, modèle économique, indicateurs clés) est
-présentée en Annexe~\ref{annexe:identite}, tandis qu'une matrice SWOT synthétisant l'ensemble
-des analyses menées au fil du diagnostic figure en Annexe~\ref{annexe:swot}.
+présentée en Annexe~\ref{annexe:identite}.
 
 \section*{PARTIE 2 – DIAGNOSTIC : FOCUS SUR LA PROBLÉMATIQUE}
 \addcontentsline{toc}{section}{Partie 2 – Diagnostic : Focus sur la problématique}
@@ -147,7 +146,7 @@ propriétaire-opérateur, qui peut cumuler les fonctions de gestion, de cuisine 
         impossibilité de proposer un conseil multilingue à une clientèle internationale.
 
   \item Gains :
-        ticket moyen plus élevé grâce à la vente de vins de gamme supérieure~; baisse de la
+        ticket moyen plus élevé via un meilleur upselling~; baisse de la
         dépendance au niveau de qualification du personnel~; meilleure satisfaction et
         fidélisation des clients finaux~; visibilité sur les préférences réelles de la
         clientèle pour ajuster les achats de cave~; simplification opérationnelle
@@ -163,8 +162,8 @@ propriétaire-opérateur, qui peut cumuler les fonctions de gestion, de cuisine 
         mets-vins et préférences aromatiques~; une carte digitale consultable en 7
         langues via QR code ou tablette~; un outil de gestion avec imports CSV,
         manuel ou PDF (lecture automatisée par IA)~; une synchronisation optionnelle
-        avec les systèmes de gestion de stock existants du restaurateur~; 
-        un tableau de bord statistique qui permet
+        avec les systèmes de gestion de stock existants du restaurateur (Winevizer
+        lui-même ne gère pas le stock)~; un tableau de bord statistique qui permet
         d'ajuster la cave aux préférences observées~; une version PDF imprimable de la
         carte~; un support client assuré par le fondateur lui-même.
 
@@ -181,7 +180,7 @@ propriétaire-opérateur, qui peut cumuler les fonctions de gestion, de cuisine 
         d'usage révèlent les préférences latentes (par exemple une surreprésentation
         des recherches de blancs légers non reflétée dans la cave) et transforment la
         gestion de carte en décision pilotée par la donnée~; le prix d'entrée
-        (24,99\,€/mois) rend l'adoption financièrement abordable à l'échelle d'un établissement.
+        (24,99\,€/mois) rend l'adoption indolore à l'échelle d'un établissement.
 \end{itemize}
 
 \subsection{Synthèse~: Fit et Misfit comme levier de rétention}
@@ -197,7 +196,7 @@ convertissent à l'abonnement payant.
 Le misfit ne se situe pas dans ce que Winevizer fait, mais dans quand
 et comment la valeur est rendue accessible. Notre analyse du parcours
 d'onboarding (landing page, création de compte, confirmation email, création de
-l'établissement, encodage de la carte, etc.) révèle une friction
+l'établissement, encodage de la carte, génération du QR code) révèle une friction
 cumulative importante avant que l'utilisateur n'atteigne la seule fonctionnalité qui
 porte réellement la valeur, à savoir le sommelier virtuel opérationnel dans son établissement.
 Les principaux écarts identifiés sont~:
@@ -218,8 +217,9 @@ Les principaux écarts identifiés sont~:
         intégrations POS supportées non mise en avant.
 
   \item Onboarding trop long avant la première valeur perçue : le parcours cumule
-        plusieurs frictions successives (inscription lourde, paywall sur la méthode
-        d'import la plus naturelle, délai de traitement des vins, etc.) sans qu'aucune valeur intermédiaire ne soit délivrée en
+        plusieurs frictions successives — inscription lourde, paywall sur la méthode
+        d'import la plus naturelle, délai de traitement des vins, génération du QR
+        code peu guidée — sans qu'aucune valeur intermédiaire ne soit délivrée en
         chemin. Ces étapes relèvent toutefois davantage du fonctionnement opérationnel
         de l'outil que du VPC~: elles sont donc décrites en détail dans la section
         suivante consacrée à la chaîne de valeur (cf.~section~\ref{sec:porter}).
@@ -342,14 +342,16 @@ permettrait de donner au prospect le cadre d'évaluation financier plus rapideme
 
 À l'image des concurrents, qui affichent des témoignages identifiés dès leur page
 d'accueil, il serait pertinent de remplacer les mentions actuelles par des références
-nominatives (nom et logo de l'établissement), de les faire remonter
+nominatives (nom et logo de l'établissement, chiffres d'impact), de les faire remonter
 en section principale, et de sortir les partenaires du pied de page pour les afficher en
 position prominente.
 
-\subsection{R3 — Afficher les intégrations POS sur la landing page}
+\hl{vérifier stock et caisse}
+
+\subsection{R3 — Afficher les intégrations caisses sur la landing page}
 
 Dans la même logique, et là encore à l'image des concurrents, afficher les logos des systèmes
-de POS compatibles sur la page d'accueil et créer une page \og{}Intégrations\fg{} dédiée
+de stock compatibles sur la page d'accueil et créer une page \og{}Intégrations\fg{} dédiée
 permettrait de désamorcer l'objection de compatibilité avant même l'inscription.
 
 \subsection{R4 — Corriger les défauts visuels de la landing page}
@@ -379,7 +381,8 @@ Une amélioration simple consisterait à refondre les tableaux tarifaires, qui p
 chargés en raison d'informations répétitives. Une présentation plus lisible pourrait reprendre, en
 lignes, les fonctionnalités proposées, et, en colonnes, les trois formules \og{}gratuit\fg{},
 \og{}mensuel\fg{} et \og{}annuel\fg{}, avec par exemple un symbole de type V ou X pour indiquer si chaque
-fonction est incluse. Cette structure réduirait la charge cognitive du prospect au moment où il
+fonction est incluse~; ou simplement conserver la structure existante en ne mettant en avant que les 
+différences entre les formules. Cette structure réduirait la charge cognitive du prospect au moment où il
 compare les offres.
 
 Le plan annuel devrait également afficher explicitement l'économie réalisée~: payer 249,90\,€ par an
@@ -507,9 +510,124 @@ naïve de la période d'essai par les mêmes identifiants.
 \appendix
 \pagestyle{empty}
 \phantomsection
+\refstepcounter{annexe}\label{annexe:chaine}
+\section*{Annexe \theannexe : Chaîne de valeur}
+\addcontentsline{toc}{section}{Annexe 1 : Chaîne de valeur}
+
+La chaîne de valeur de Winevizer identifie les activités créatrices de valeur et celles
+à externaliser ou à développer.
+
+\vspace{1em}
+\begin{tabularx}{\linewidth}{|>{\bfseries\raggedright\arraybackslash}p{4cm}|Y|>{\centering\arraybackslash}p{3cm}|}
+  \hline
+  \textbf{Activité} & \textbf{Description} & \textbf{Valeur créée} \\
+  \hline
+  \multicolumn{3}{|l|}{\textbf{ACTIVITÉS PRIMAIRES}} \\
+  \hline
+  Logistique interne &
+  Onboarding client~: inscription, création de l'établissement, import de la carte (CSV, manuel, PDF par IA), traitement IA, génération QR code. &
+  $\downarrow$ (goulot identifié) \\
+  \hline
+  Opérations &
+  Fonctionnement de la plateforme web, génération des recommandations en temps réel, synchronisation avec les systèmes de stock du restaurateur. &
+  $\uparrow\uparrow\uparrow\uparrow\uparrow$ \\
+  \hline
+  Logistique externe &
+  Mise à disposition de la carte digitale via QR code ou tablette pour les clients finaux. &
+  $\uparrow\uparrow\uparrow\uparrow$ \\
+  \hline
+  Vente \& Marketing &
+  SEO organique (Top 3 Google) et bouche-à-oreille efficaces~; outbound peu efficace~; pas de prospection active. &
+  $\uparrow\uparrow\uparrow$ (SEO)\newline $\uparrow$ (Ads) \\
+  \hline
+  Service client &
+  Support par email, accompagnement manuel ($\sim$1h par client payant pour la revue IA), facteur de rétention mais non industrialisé. &
+  $\uparrow\uparrow\uparrow$ \\
+  \hline
+  \multicolumn{3}{|l|}{\textbf{ACTIVITÉS DE SOUTIEN}} \\
+  \hline
+  Infrastructure \& IT &
+  Hébergement cloud avec certifications énergétiques, modèles IA choisis pour leur efficience. &
+  $\uparrow\uparrow\uparrow\uparrow$ \\
+  \hline
+  Gestion RH &
+  Équipe de 2 développeurs en complémentaire, recrutement commercial planifié en 2026. &
+  $\uparrow\uparrow$ (vulnérabilité) \\
+  \hline
+  R\&D &
+  Algorithme de recommandation, base de données de 95\,\% des vins mondiaux, modèle IA de lecture de cartes PDF. &
+  $\uparrow\uparrow\uparrow\uparrow\uparrow$ \\
+  \hline
+  Approvisionnements &
+  Licences logicielles, flux de données externes, services IA facturés à l'usage. &
+  $\uparrow\uparrow$ \\
+  \hline
+\end{tabularx}
+
+\newpage
+\phantomsection
+\refstepcounter{annexe}\label{annexe:swot}
+\section*{Annexe \theannexe : Matrice SWOT}
+\addcontentsline{toc}{section}{Annexe 2 : Matrice SWOT}
+
+\vspace{1em}
+\begin{tabularx}{\linewidth}{|Y|Y|}
+  \hline
+  \multicolumn{1}{|c|}{\textbf{FORCES (\textit{Strengths})}} &
+  \multicolumn{1}{c|}{\textbf{FAIBLESSES (\textit{Weaknesses})}} \\
+  \hline
+  \begin{itemize}[leftmargin=1em, topsep=2pt, itemsep=1pt]
+    \item Sommelier virtuel contextualisé au stock réel — différenciateur sur le marché européen
+    \item Algorithme mets-vins et préférences aromatiques (7 langues)
+    \item Base de données propriétaire couvrant $\sim$95\,\% des vins commercialisés
+    \item Référencement SEO dans le top 3 sur les requêtes stratégiques
+    \item Modèle SaaS léger, charges limitées à l'infrastructure IT
+    \item Churn historique contenu ($\sim$10\,\% sur 3 ans)
+    \item Données comportementales accumulées sur 3 ans
+    \item Prix d'entrée bas (24,99\,€/mois) — faible barrière à l'adoption
+  \end{itemize} &
+  \begin{itemize}[leftmargin=1em, topsep=2pt, itemsep=1pt]
+    \item Équipe de 2 personnes, activité complémentaire, aucune force commerciale
+    \item Taux d'activation très faible ($\sim$10,6\,\% des comptes créés convertissent)
+    \item Landing page centrée sur les fonctionnalités, pas sur le ROI
+    \item Chemin d'onboarding le plus naturel (PDF) verrouillé en période d'essai
+    \item Signaux de confiance absents (pas de témoignages, pas de logos)
+    \item Outbound marketing coûteux et peu efficace
+    \item Pas de protection IP (marque, base de données, algorithme)
+    \item Peu d'intégrations POS comparé à Somm'it
+  \end{itemize} \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{OPPORTUNITÉS (\textit{Opportunities})}} &
+  \multicolumn{1}{c|}{\textbf{MENACES (\textit{Threats})}} \\
+  \hline
+  \begin{itemize}[leftmargin=1em, topsep=2pt, itemsep=1pt]
+    \item Marché US très réceptif avec trafic spontané depuis la version anglaise
+    \item Extension à la grande distribution (rayons vins)
+    \item Passage en société en T1~2026 — accès à de nouvelles primes publiques
+    \item Tendance no/low alcohol, extension aux softs, mocktails, thés, kombuchas
+    \item E-label réglementaire UE — familiarisation des consommateurs au QR code œnologique
+    \item Partenariats prescripteurs (écoles de sommellerie, cavistes, fournisseurs Horeca)
+    \item Plans tarifaires différenciés (freemium, premium) pour augmenter l'ARPU
+    \item Recrutement d'un profil commercial à mi-temps planifié en 2026
+  \end{itemize} &
+  \begin{itemize}[leftmargin=1em, topsep=2pt, itemsep=1pt]
+    \item IA générative grand public — duplication potentielle rapide du modèle
+    \item Concurrents mieux financés (Somm'it) et descente en gamme vers les petits établissements
+    \item Résistance culturelle française à la digitalisation du vin
+    \item Dépendance quasi-exclusive au SEO comme canal d'acquisition
+    \item Volatilité EUR/USD — marge érodée sur facturation en dollars
+    \item Incertitude réglementaire américaine (droits de douane, services numériques)
+    \item Concentration humaine sur les 2 fondateurs — risque critique
+    \item Faible adoption du QR code sur certains marchés (UK)
+  \end{itemize} \\
+  \hline
+\end{tabularx}
+
+\newpage
+\phantomsection
 \refstepcounter{annexe}\label{annexe:identite}
 \section*{Annexe \theannexe : Fiche d'identité de Winevizer}
-\addcontentsline{toc}{section}{Annexe 1 : Fiche d'identité de Winevizer}
+\addcontentsline{toc}{section}{Annexe 3 : Fiche d'identité de Winevizer}
 
 \vspace{0.5em}
 \begin{tabularx}{\linewidth}{|>{\bfseries\raggedright\arraybackslash}p{4cm}|Y|}
@@ -529,66 +647,9 @@ naïve de la période d'essai par les mêmes identifiants.
   Canaux d'acquisition             & SEO organique (top 3 sur les requêtes stratégiques) et bouche-à-oreille. Campagnes outbound (Google Ads, Facebook Ads, mailing) jugées coûteuses et peu efficaces par le fondateur. \\ \hline
 \end{tabularx}
 
-\vspace{2em}
-\phantomsection
-\refstepcounter{annexe}\label{annexe:swot}
-\section*{Annexe \theannexe : Matrice SWOT}
-\addcontentsline{toc}{section}{Annexe 2 : Matrice SWOT}
-
-\vspace{0.5em}
-{\small
-\begin{tabularx}{\linewidth}{|Y|Y|}
-  \hline
-  \multicolumn{1}{|c|}{\textbf{Strengths}} &
-  \multicolumn{1}{c|}{\textbf{Weaknesses}} \\
-  \hline
-  \begin{itemize}[leftmargin=1em, topsep=1pt, itemsep=0pt, parsep=0pt]
-    \item Sommelier virtuel contextualisé au stock réel — différenciateur sur le marché européen
-    \item Algorithme mets-vins et préférences aromatiques (7 langues)
-    \item Base de données propriétaire couvrant $\sim$95\,\% des vins commercialisés
-    \item Référencement SEO dans le top 3 sur les requêtes stratégiques
-    \item Modèle SaaS léger, charges limitées à l'infrastructure IT
-    \item Churn historique contenu ($\sim$10\,\% sur 3 ans)
-    \item Données comportementales accumulées sur 3 ans
-    \item Prix d'entrée bas (24,99\,€/mois) — faible barrière à l'adoption
-  \end{itemize} &
-  \begin{itemize}[leftmargin=1em, topsep=1pt, itemsep=0pt, parsep=0pt]
-    \item Équipe de 2 personnes, activité complémentaire, aucune force commerciale
-    \item Taux d'activation très faible ($\sim$10,6\,\% des comptes créés convertissent)
-    \item Landing page centrée sur les fonctionnalités, pas sur le ROI
-    \item Chemin d'onboarding le plus naturel (PDF) verrouillé en période d'essai
-    \item Signaux de confiance absents (pas de témoignages, pas de logos)
-    \item Outbound marketing coûteux et peu efficace
-    \item Aucune protection de la propriété intellectuelle~: ni la marque, ni la base de données, ni l'algorithme
-    \item Peu d'intégrations POS comparé à Somm'it
-  \end{itemize} \\
-  \hline
-  \multicolumn{1}{|c|}{\textbf{Opportunities}} &
-  \multicolumn{1}{c|}{\textbf{Threats}} \\
-  \hline
-  \begin{itemize}[leftmargin=1em, topsep=1pt, itemsep=0pt, parsep=0pt]
-    \item Marché US très réceptif avec trafic spontané depuis la version anglaise
-    \item Extension à la grande distribution (rayons vins)
-    \item Passage en société en T1~2026 — accès à de nouvelles primes publiques
-    \item Tendance no/low alcohol, extension aux softs, mocktails, thés, kombuchas
-    \item E-label réglementaire UE — familiarisation des consommateurs au QR code œnologique
-    \item Partenariats prescripteurs (écoles de sommellerie, cavistes, fournisseurs Horeca)
-    \item Plans tarifaires différenciés (freemium, premium) pour augmenter l'ARPU
-    \item Recrutement d'un profil commercial à mi-temps planifié en 2026
-  \end{itemize} &
-  \begin{itemize}[leftmargin=1em, topsep=1pt, itemsep=0pt, parsep=0pt]
-    \item IA générative grand public — duplication potentielle rapide du modèle
-    \item Concurrents mieux financés (Somm'it) et descente en gamme vers les petits établissements
-    \item Résistance culturelle française à la digitalisation du vin
-    \item Dépendance quasi-exclusive au SEO comme canal d'acquisition
-    \item Volatilité EUR/USD — marge érodée sur facturation en dollars
-    \item Incertitude réglementaire américaine (droits de douane, services numériques)
-    \item Concentration humaine sur les 2 fondateurs — risque critique
-    \item Faible adoption du QR code sur certains marchés (UK)
-  \end{itemize} \\
-  \hline
-\end{tabularx}
-}
+\nocite{*}
+\bibliographystyle{apacite}
+\bibliography{references}
 
 \includepdf[pages=-]{media/back.pdf}
 
