@@ -346,18 +346,20 @@ nominatives (nom et logo de l'établissement, chiffres d'impact), de les faire r
 en section principale, et de sortir les partenaires du pied de page pour les afficher en
 position prominente.
 
-\subsection{R3 — Afficher les intégrations POS sur la landing page}
+\hl{vérifier stock et caisse}
+
+\subsection{R3 — Afficher les intégrations caisses sur la landing page}
 
 Dans la même logique, et là encore à l'image des concurrents, afficher les logos des systèmes
-POS et stock compatibles sur la page d'accueil et créer une page \og{}Intégrations\fg{} dédiée
+de stock compatibles sur la page d'accueil et créer une page \og{}Intégrations\fg{} dédiée
 permettrait de désamorcer l'objection de compatibilité avant même l'inscription.
 
 \subsection{R4 — Corriger les défauts visuels de la landing page}
 
-D'une part, plusieurs éléments graphiques de la page apparaissent brusquement à leur
-premier chargement~: l'aperçu des versions smartphone et tablette de la carte lors des
-transitions, mais aussi le logo Winevizer et les icônes de drapeaux de langue (entre autres) lors
-du rechargement de la page. D'autre part, la vidéo de
+D'une part, plusieurs éléments graphiques de la page apparaissent trop lentement
+~: l'aperçu des versions smartphone et tablette de la carte lors des
+transitions, mais aussi le logo Winevizer et les icônes de drapeaux de langue (entre autres).
+D'autre part, la vidéo de
 présentation dans la partie \og{}Vidéos \& Tutoriels\fg{} déborde des limites visibles de l'écran. Apporter
 des corrections à ces problèmes est quelque chose de
 rapide à réaliser, mais leur absence actuelle donne une impression peu professionnelle
@@ -366,12 +368,14 @@ susceptible d'entamer la confiance du prospect avant même l'inscription.
 \subsection{R5 — Supprimer les sous-pages redondantes de la carte des vins}
 
 L'onglet \og{}Carte des vins digitale\fg{} du site propose trois déclinaisons~: \og{}Restaurant\fg{}, \og{}Bar à vins\fg{} et
-\og{}Caviste \& Boutique\fg{}. Chacune renvoie vers une page au contenu très similaire à la page d'accueil,
+\og{}Caviste \& Boutique\fg{}. Chacune renvoie vers une page au contenu trop similaire à la page d'accueil,
 offrant peu d'informations nouvelles. C'est par ailleurs précisément sur ces pages que sont relégués
 les indicateurs d'impact métier et les témoignages clients évoqués en R1 et R2~: le prospect qui ne
 clique pas sur ces onglets ne les verra jamais. La recommandation est donc de supprimer ces
 sous-pages et de rapatrier leurs contenus utiles (indicateurs de ROI, témoignages) directement
 en section principale de la page d'accueil, conformément à R1 et R2.
+
+\hl{reference en annexe + dire ou juste afficher ce qui est différent}
 
 \subsection{R6 — Simplifier la présentation des tarifs}
 
@@ -401,7 +405,7 @@ que l'utilisateur les respecte du premier coup au lieu d'avoir à corriger un me
 
 \subsection{R8 — Adopter un mécanisme d'authentification sans friction}
 
-Une option plus structurante consisterait à supprimer le mot de passe à cette étape au profit
+Une option plus structurante pour l'inscription consisterait à supprimer le mot de passe à cette étape au profit
 d'un mécanisme sans mot de passe~: magic link envoyé par email, OTP à six chiffres, ou connexion
 par numéro de téléphone (approches déjà répandues dans des solutions comme Slack ou Notion).
 L'utilisateur n'aurait alors qu'un seul champ à remplir et la création du mot de passe peut être
@@ -409,11 +413,10 @@ différée, ou remplacée par un autre mécanisme.
 
 Il est également nécessaire de traiter le lien de confirmation par email. L'utilisateur ne sait
 pas que ce lien n'est pas réellement bloquant~: s'il rencontre le bug du lien \og{}expiré\fg{},
-il risque de conclure que l'inscription a échoué et d'abandonner. Selon la contrainte
-réglementaire~: si la confirmation n'est pas légalement obligatoire, la supprimer~; sinon, la
-rendre non bloquante (entrée immédiate dans l'application, validation a posteriori) et corriger le bug.
+il risque de conclure que l'inscription a échoué et d'abandonner. Il est préférable de
+rendre le lien de vérification bloquant afin de donner un sentiment de sécurité aux utilisateurs.
 
-\subsection{R9 — Éviter les reconnexions systématiques après fermeture de la page}
+\subsection{R9 — Éviter les déconnexions systématiques après fermeture de la page}
 
 Un point de friction supplémentaire mérite d'être traité~: lorsqu'un utilisateur est déjà
 connecté, la fermeture de l'onglet ou du navigateur entraîne une déconnexion apparente, et
@@ -457,8 +460,8 @@ cet accès à tous les utilisateurs gratuits~: cette décision mérite d'être a
 Au-delà du paywall, le parcours alternatif mérite une réflexion plus large. En ne demandant
 qu'une adresse email, un nom d'établissement et un fichier, il génère nettement moins de
 friction que le parcours classique et s'aligne davantage sur le problème concret du restaurateur.
-On pourrait envisager de le mettre plus en avant sur la landing page, voire d'en faire le point
-d'entrée principal. Cette logique prolonge directement R7 et R8~: moins de champs, entrée plus
+On pourrait envisager de le mettre plus en avant sur la landing page, voire d'en faire le seul point
+d'entrée. Cette logique prolonge directement R7 et R8~: moins de champs, entrée plus
 rapide dans la valeur.
 
 Il resterait toutefois à corriger la fragilité de la phase de finalisation~: le lien email est
@@ -469,7 +472,7 @@ sans mot de passe évoquée en R8.
 
 \subsection{R13 — Transformer le chatbot en véritable canal de support}
 
-L'application intègre une interface de type chatbot qui laisse attendre une réponse
+La plateforme d'administration (app.winevizer.com) intègre une interface de type chatbot qui laisse attendre une réponse
 immédiate~; en réalité, le message est simplement transmis au support, qui répond par email
 ultérieurement. Ce décalage est particulièrement dommageable aux moments de blocage.
 Il serait pertinent de configurer cet outil pour qu'il réponde automatiquement aux questions
@@ -498,9 +501,10 @@ et repart pour un nouveau mois d'essai. Aucune traçabilité n'empêche aujourd'
 manipulation~: côté base de données, la suppression du compte efface toute mémoire de l'essai
 précédent, comme si l'utilisateur se présentait pour la première fois.
 
-Une correction d'effort minimal consisterait à conserver en base, indépendamment de la
-suppression du compte, un marqueur associant l'adresse email et éventuellement l'adresse
-IP à un essai déjà utilisé. Ce marqueur persistant suffit à bloquer toute réactivation
+Une correction d'effort minimal consisterait à conserver en base de données, indépendamment de la
+suppression du compte, l'adresse email chiffrée de l'utilisateur de sorte 
+qu'elle puisse être utilisée pour vérifier si un essai a déjà été utilisé. 
+Ce marqueur persistant suffit à bloquer toute réactivation
 naïve de la période d'essai par les mêmes identifiants.
 
 \newpage
