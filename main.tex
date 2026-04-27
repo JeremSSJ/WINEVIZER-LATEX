@@ -409,10 +409,10 @@ par numéro de téléphone (approches déjà répandues dans des solutions comme
 L'utilisateur n'aurait alors qu'un seul champ à remplir et la création du mot de passe peut être
 différée, ou remplacée par un autre mécanisme.
 
-Il est également nécessaire de traiter le lien de confirmation par email. L'utilisateur ne sait
-pas que ce lien n'est pas réellement bloquant~: s'il rencontre le bug du lien expiré,
-il risque de conclure que l'inscription a échoué et d'abandonner. Il est préférable de
-rendre le lien de vérification bloquant afin de donner un sentiment de sécurité aux utilisateurs.
+Il faut également traiter deux problèmes distincts liés au lien de confirmation email~: d'une part,
+le bug du message lien expiré alors que le lien vient d'être reçu~; d'autre part,
+le fait que la vérification ne soit pas bloquante, même quand le lien fonctionne.
+La recommandation est donc simple~: corriger le bug et rendre la validation réellement bloquante.
 
 \subsection{R9 — Éviter les déconnexions systématiques après fermeture de la page}
 
