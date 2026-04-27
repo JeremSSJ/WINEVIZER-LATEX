@@ -494,13 +494,13 @@ la première ligne est ignorée, sinon elle est importée comme un vin.
 
 Ce conseil dépasse le périmètre de l'onboarding, mais la faille mérite d'être signalée.
 Le scénario est simple~: un utilisateur consomme intégralement son mois d'essai gratuit,
-supprime son compte, en recrée un avec la même adresse email, réimporte sa carte des vins
+supprime son compte, en recrée un avec la même adresse mail, réimporte sa carte des vins
 et repart pour un nouveau mois d'essai. Aucune traçabilité n'empêche aujourd'hui cette
 manipulation~: côté base de données, la suppression du compte efface toute mémoire de l'essai
 précédent, comme si l'utilisateur se présentait pour la première fois.
 
 Une correction d'effort minimal consisterait à conserver en base de données, indépendamment de la
-suppression du compte, l'adresse email chiffrée de l'utilisateur de sorte 
+suppression du compte, l'adresse mail chiffrée de l'utilisateur de sorte 
 qu'elle puisse être utilisée pour vérifier si un essai a déjà été utilisé. 
 Ce marqueur persistant suffit à bloquer toute réactivation
 naïve de la période d'essai par les mêmes identifiants.
