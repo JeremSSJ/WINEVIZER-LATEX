@@ -409,10 +409,12 @@ par numéro de téléphone (approches déjà répandues dans des solutions comme
 L'utilisateur n'aurait alors qu'un seul champ à remplir et la création du mot de passe peut être
 différée, ou remplacée par un autre mécanisme.
 
-Il faudrait également traiter les deux problèmes existants liés au lien de confirmation~: d'une part,
-le bug du message lien expiré alors que le lien vient d'être reçu~; d'autre part,
-le fait que la vérification ne soit pas bloquante, même quand le lien fonctionne.
+Il faudrait également traiter les deux problèmes existants liés au lien de confirmation. D'une part,
+le bug du message lien expiré alors que le lien vient d'être reçu.
+D'autre part, le fait que la vérification ne soit pas bloquante, même quand le lien fonctionne.
 La recommandation est donc simple~: corriger le bug et rendre la validation réellement bloquante.
+Si le bug survient, l'utilisateur peut croire que l'inscription ne fonctionne pas et abandonner.
+Sans validation obligatoire, un utilisateur peut croire que n'importe qui peut créer un compte avec son adresse email.
 
 \subsection{R9 — Éviter les déconnexions systématiques après fermeture de la page}
 
