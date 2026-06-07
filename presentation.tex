@@ -1,0 +1,339 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usetheme{Madrid}
+
+% ── Palette bordeaux / rouge ─────────────────────────────────────────────────
+\definecolor{bordeaux}{RGB}{112, 18, 28}
+\definecolor{rouge}{RGB}{170, 40, 40}
+\definecolor{beigelight}{RGB}{248, 238, 230}
+
+\setbeamercolor{palette primary}{bg=bordeaux, fg=white}
+\setbeamercolor{palette secondary}{bg=rouge, fg=white}
+\setbeamercolor{palette tertiary}{bg=bordeaux!85!black, fg=white}
+\setbeamercolor{palette quaternary}{bg=bordeaux, fg=white}
+\setbeamercolor{structure}{fg=bordeaux}
+\setbeamercolor{frametitle}{bg=bordeaux, fg=white}
+\setbeamercolor{title}{bg=bordeaux, fg=white}
+\setbeamercolor{section in toc}{fg=bordeaux}
+\setbeamercolor{item}{fg=bordeaux}
+
+\setbeamercolor{block title}{bg=bordeaux, fg=white}
+\setbeamercolor{block body}{bg=beigelight, fg=black}
+\setbeamercolor{block title alerted}{bg=rouge, fg=white}
+\setbeamercolor{block body alerted}{bg=rouge!12, fg=black}
+\setbeamercolor{block title example}{bg=bordeaux!70!black, fg=white}
+\setbeamercolor{block body example}{bg=bordeaux!10, fg=black}
+
+% ── Fondu sur les éléments non encore révélés ────────────────────────────────
+\setbeamercovered{transparent=15}
+
+\setbeamertemplate{navigation symbols}{}
+
+\title[Winevizer]{Gestion de la relation client et rétention}
+\subtitle{Cas n\textsuperscript{o}7 -- Winevizer}
+\author{Groupe X}
+\date{Juin 2026}
+\institute{MGEHD2142 -- Management de la PME}
+
+\begin{document}
+
+% ============================================================
+% PAGE DE GARDE
+% ============================================================
+\begin{frame}[plain,noframenumbering]
+  \transfade
+  \titlepage
+\end{frame}
+
+% ============================================================
+% SLIDE 1 — INTRODUCTION
+% ============================================================
+\begin{frame}{Introduction}
+  \transfade
+  \begin{columns}
+    \begin{column}{0.58\textwidth}
+      \textbf{Winevizer} : sommelier virtuel SaaS B2B pour l'Horeca\\
+      {\small QR code ou tablette, 7 langues, 24,99\,€/mois, fondée en 2021}
+      \vspace{0.6em}
+
+      \uncover<2->{
+      Demande initiale : tunnel de vente, échecs d'abonnement, fidélisation.\\[0.4em]
+      \textbf{Notre recentrage :} le churn des payants reste contenu ($\sim$10\,\% sur 3~ans).\\
+      Le vrai frein est \textbf{l'activation}.
+      }
+    \end{column}
+    \begin{column}{0.40\textwidth}
+      \uncover<3->{
+      \begin{block}{Chiffres clés}
+        \begin{itemize}
+          \item 585 comptes créés
+          \item 62 souscriptions payantes
+          \item \textbf{Conversion globale $\approx$ 10,6\,\%}
+          \item Conversion fin d'essai (carte déployée) : \textbf{20--25\,\%}
+        \end{itemize}
+      \end{block}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+% SLIDE 2 — PARTIE 1 : WINEVIZER EN BREF
+% ============================================================
+\begin{frame}{Partie 1 -- Winevizer en bref}
+  \transfade
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \uncover<1->{
+      \begin{block}{Profil entrepreneurial}
+        \small
+        \begin{itemize}
+          \item Sébastien Demoustiez, développeur, Mons
+          \item 2 personnes, activité complémentaire
+          \item Passage en société prévu T1 2026
+          \item CA $\sim$12\,000\,€/an ; charges limitées à l'IT
+          \item SEO top 3 sur les requêtes stratégiques
+        \end{itemize}
+      \end{block}
+      }
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \uncover<2->{
+      \begin{block}{Proposition de valeur}
+        \small
+        \begin{itemize}
+          \item Sommelier virtuel contextualisé au stock
+          \item Carte digitale synchronisée, exportable PDF
+          \item Tableau de bord statistique
+          \item Import CSV, manuel ou PDF/photo (IA)
+          \item Intégration optionnelle POS
+        \end{itemize}
+      \end{block}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+% SLIDE 3 — PARTIE 2 : VPC — PROFIL CLIENT
+% ============================================================
+\begin{frame}{Partie 2 -- Value Proposition Canvas : Profil client}
+  \transfade
+  {\small \textbf{Le restaurateur indépendant / patron de bar à vins}}
+  \vspace{0.2em}
+  \begin{columns}
+    \begin{column}{0.33\textwidth}
+      \uncover<1->{
+      \begin{block}{Customer Jobs}
+        \scriptsize
+        \begin{itemize}
+          \item Maximiser la marge vins\\(30--40\,\% du CA)
+          \item Service homogène malgré la rotation du personnel
+          \item Carte à jour en temps réel
+          \item Image professionnelle
+        \end{itemize}
+      \end{block}
+      }
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \uncover<2->{
+      \begin{alertblock}{Pains}
+        \scriptsize
+        \begin{itemize}
+          \item Pénurie de sommeliers\\(\textless{}5\,\% des établissements)
+          \item Personnel peu formé\\(étudiants, flexi-jobs)
+          \item Réimpression coûteuse des cartes
+          \item Conseil multilingue impossible
+        \end{itemize}
+      \end{alertblock}
+      }
+    \end{column}
+    \begin{column}{0.33\textwidth}
+      \uncover<3->{
+      \begin{exampleblock}{Gains attendus}
+        \scriptsize
+        \begin{itemize}
+          \item Ticket moyen plus élevé
+          \item Moins de dépendance à la qualification
+          \item Meilleure satisfaction client
+          \item Pilotage de la cave par la donnée
+        \end{itemize}
+      \end{exampleblock}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+% SLIDE 4 — PARTIE 2 : VPC — FIT ET MISFIT
+% ============================================================
+\begin{frame}{Partie 2 -- Value Proposition Canvas : Fit et Misfit}
+  \transfade
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \uncover<1->{
+      \begin{exampleblock}{Fit stratégique validé}
+        \small
+        Winevizer répond directement aux pains et jobs :
+        \begin{itemize}
+          \item Se substitue au sommelier humain
+          \item Carte synchronisée, multilingue
+          \item Pilotage par la donnée
+        \end{itemize}
+        \vspace{0.3em}
+        Utilisateurs ayant \textbf{déployé} la carte : \textbf{20--25\,\% convertissent}.
+      \end{exampleblock}
+      }
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \uncover<2->{
+      \begin{alertblock}{Misfit : la valeur est accessible trop tard}
+        \small
+        Le problème n'est pas \textit{ce que} fait Winevizer, mais \textit{quand} et \textit{comment} la valeur devient accessible.
+        \begin{itemize}
+          \item Discours centré fonctionnalités, pas sur le ROI
+          \item Signaux de confiance peu visibles
+          \item Friction cumulative avant la 1\textsuperscript{re} valeur perçue
+        \end{itemize}
+      \end{alertblock}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+% SLIDE 5 — PARTIE 2 : PORTER — FRICTIONS DU PARCOURS CLASSIQUE
+% ============================================================
+\begin{frame}{Partie 2 -- Chaîne de valeur : Parcours classique}
+  \transfade
+  \textbf{6 étapes cumulatives avant la première valeur perçue}
+  \vspace{0.15em}
+  \begin{enumerate}
+    \small
+    \item<1-> \textbf{Création de compte :} 5 champs ; règles du mot de passe affichées \textit{après} saisie
+    \item<2-> \textbf{Confirmation email :} bug de lien expiré ; étape contournable sans bénéfice
+    \item<3-> \textbf{Création de l'établissement :} 8 champs obligatoires sans lien avec les fonctionnalités
+    \item<4-> \textbf{Encodage de la carte :} import PDF -- méthode la plus naturelle -- \textbf{verrouillé derrière le paywall}
+    \item<5-> \textbf{Traitement IA :} délai de plusieurs heures, \textbf{aucune valeur intermédiaire délivrée}
+    \item<6-> \textbf{Génération du QR code :} non guidée, difficile à localiser dans l'interface
+  \end{enumerate}
+  \vspace{0.2em}
+  \uncover<6->{\footnotesize \textit{S'ajoutent : défauts visuels sur la landing page ; chatbot présenté comme temps réel mais réponse asynchrone.}}
+\end{frame}
+
+% ============================================================
+% SLIDE 6 — PARTIE 2 : PORTER — PARCOURS ALTERNATIF
+% ============================================================
+\begin{frame}{Partie 2 -- Chaîne de valeur : Parcours alternatif}
+  \transfade
+  {\small \textbf{Via la landing page :} email + nom d'établissement + fichier $\rightarrow$ carte générée en $\sim$2\,h}
+  \vspace{0.4em}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \uncover<1->{
+      \begin{exampleblock}{Avantages}
+        \begin{itemize}
+          \item Beaucoup moins de friction
+          \item Import PDF librement accessible
+          \item Aligné sur le besoin réel du restaurateur
+        \end{itemize}
+      \end{exampleblock}
+      }
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \uncover<2->{
+      \begin{alertblock}{Incohérences et fragilités}
+        \begin{itemize}
+          \item PDF \textbf{gratuit ici}, payant dans le parcours classique
+          \item Lien email = unique porte d'accès : suppression accidentelle $\Rightarrow$ import perdu
+          \item Aucune orientation vers ce parcours depuis le site
+        \end{itemize}
+      \end{alertblock}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+% SLIDE 7 — PARTIE 3 : RECOMMANDATIONS — LANDING PAGE & ONBOARDING
+% ============================================================
+\begin{frame}{Partie 3 -- Recommandations : Landing page \& Onboarding}
+  \transfade
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \uncover<1->{
+      \begin{block}{Landing page (R1--R6)}
+        \small
+        \begin{itemize}
+          \item \textbf{R1} Discours centré sur le ROI dès la page d'accueil
+          \item \textbf{R2} Témoignages nominatifs avec logos
+          \item \textbf{R3} Afficher les intégrations POS
+          \item \textbf{R4} Corriger les défauts visuels
+          \item \textbf{R5} Supprimer les sous-pages redondantes
+          \item \textbf{R6} Simplifier et valoriser les tarifs
+        \end{itemize}
+      \end{block}
+      }
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \uncover<2->{
+      \begin{block}{Onboarding (R7--R12)}
+        \small
+        \begin{itemize}
+          \item \textbf{R7} Alléger le formulaire d'inscription
+          \item \textbf{R8} Magic link / OTP sans mot de passe
+          \item \textbf{R9} Persistance de session (cookie sécurisé)
+          \item \textbf{R10} Réduire la création d'établissement à 2 champs
+          \item \textbf{R11} \textbf{Lever le paywall sur l'import PDF}
+          \item \textbf{R12} Rationaliser / unifier les parcours
+        \end{itemize}
+      \end{block}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ============================================================
+% SLIDE 8 — PARTIE 3 : RECOMMANDATIONS TECHNIQUE & CONCLUSION
+% ============================================================
+\begin{frame}{Partie 3 -- Recommandations techniques \& Conclusion}
+  \transfade
+  \begin{columns}
+    \begin{column}{0.46\textwidth}
+      \uncover<1->{
+      \begin{block}{Recommandations techniques (R13--R15)}
+        \small
+        \begin{itemize}
+          \item \textbf{R13} Automatiser le chatbot (FAQ, QR code, imports)
+          \item \textbf{R14} Corriger le bug CSV (1\textsuperscript{re} ligne ignorée)
+          \item \textbf{R15} Bloquer la réactivation de l'essai gratuit\\(email chiffré conservé en base)
+        \end{itemize}
+      \end{block}
+      }
+    \end{column}
+    \begin{column}{0.52\textwidth}
+      \uncover<2->{
+      \begin{block}{Ce que montre l'analyse}
+        \small
+        \begin{itemize}
+          \item Fit produit-marché \textbf{solide} : 20--25\,\% convertissent quand la valeur est atteinte
+          \item Le frein tient à trois leviers : \textbf{discours}, \textbf{frictions} et \textbf{incohérences}
+        \end{itemize}
+      \end{block}
+      \vspace{0.4em}
+      \begin{alertblock}{Priorités}
+        \small
+        \textbf{Court terme :} R1--R6, R11, R14\\
+        \textbf{Moyen terme :} R7--R12\\
+        \textit{Hors périmètre : échecs d'abonnement, fidélisation des payants}
+      \end{alertblock}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\end{document}
